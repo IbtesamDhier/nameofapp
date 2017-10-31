@@ -1,0 +1,940 @@
+Started GET "/" for 127.0.0.1 at 2017-10-30 12:26:00 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (9.9ms)
+Completed 200 OK in 820ms (Views: 54.1ms)
+
+
+Started GET "/static_pages/index" for 127.0.0.1 at 2017-10-30 17:01:00 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 6401ms (Views: 6064.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-30 17:04:41 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (10.6ms)
+Completed 200 OK in 50ms (Views: 15.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-30 17:07:50 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 194ms (Views: 191.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-30 17:30:24 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 130ms (Views: 116.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-30 17:36:54 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 76ms (Views: 75.2ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-30 18:05:38 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 94ms (Views: 91.1ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-10-30 18:05:57 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 59ms (Views: 58.2ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-10-30 19:09:21 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 214ms (Views: 182.5ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-30 19:09:33 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 91ms (Views: 89.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-30 19:09:47 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 69ms (Views: 67.9ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-10-30 19:19:09 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 68ms (Views: 64.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-30 19:19:16 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 69ms (Views: 66.9ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-30 19:34:06 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 215ms (Views: 214.0ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-30 19:50:14 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 349ms (Views: 347.5ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-10-30 19:50:24 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 65ms (Views: 63.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-30 19:50:29 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 74ms (Views: 63.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-30 20:17:23 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (723.2ms)
+Completed 500 Internal Server Error in 966ms
+
+
+  
+ActionView::Template::Error (The asset "racebike.jpg" is not present in the asset pipeline.):
+    1: <h1>Welcome to Web Development World</h1>
+    2: <h2>Your source for creating Websites</h2>
+    3: 
+    4: <%= image_tag("racebike.jpg") %>
+  
+app/views/static_pages/index.html.erb:4:in `_app_views_static_pages_index_html_erb__2248525566414397350_70233821824940'
+Started GET "/" for 127.0.0.1 at 2017-10-30 20:17:56 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (186.0ms)
+Completed 500 Internal Server Error in 198ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    1: <h1>Welcome to Web Development World</h1>
+    2: <h2>Your source for creating Websites</h2>
+    3: 
+    4: <%= image_tag("PC.jpg") %>
+  
+app/assets/javascripts/application.js:15
+app/views/static_pages/index.html.erb:4:in `_app_views_static_pages_index_html_erb__2248525566414397350_70233803081260'
+Started GET "/" for 127.0.0.1 at 2017-10-30 20:18:56 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (37.4ms)
+Completed 500 Internal Server Error in 40ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    1: <h1>Welcome to Web Development World</h1>
+    2: <h2>Your source for creating Websites</h2>
+    3: 
+    4: <%= image_tag("PC.jpg") %>
+  
+app/assets/javascripts/application.js:15
+app/views/static_pages/index.html.erb:4:in `_app_views_static_pages_index_html_erb__2248525566414397350_70233802772280'
+Started GET "/" for 127.0.0.1 at 2017-10-30 20:22:15 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (37.3ms)
+Completed 500 Internal Server Error in 47ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    1: <h1>Welcome to Web Development World</h1>
+    2: <h2>Your source for creating Websites</h2>
+    3: 
+    4: <%= image_tag("PC.jpg") %>
+  
+app/assets/javascripts/application.js:15
+app/views/static_pages/index.html.erb:4:in `_app_views_static_pages_index_html_erb__2248525566414397350_70233805972000'
+Started GET "/" for 127.0.0.1 at 2017-10-30 20:34:00 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 96ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    4:     <title>Nameofapp</title>
+    5: 
+    6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8: 
+    9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2701255597564811216_70233797049160'
+Started GET "/" for 127.0.0.1 at 2017-10-30 20:38:44 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (23.5ms)
+Completed 500 Internal Server Error in 188ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    4:     <title>Nameofapp</title>
+    5: 
+    6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8: 
+    9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2701255597564811216_70233924878680'
+Started GET "/" for 127.0.0.1 at 2017-10-30 20:44:42 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 1263ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    4:     <title>Nameofapp</title>
+    5: 
+    6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8: 
+    9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___96708743363420778_70133833450760'
+Started GET "/" for 127.0.0.1 at 2017-10-30 20:51:55 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 34ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    4:     <title>Nameofapp</title>
+    5: 
+    6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8: 
+    9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___96708743363420778_70133896766640'
+Started GET "/" for 127.0.0.1 at 2017-10-30 20:55:17 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 47ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    4:     <title>Nameofapp</title>
+    5: 
+    6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8: 
+    9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___96708743363420778_70133838869620'
+Started GET "/" for 127.0.0.1 at 2017-10-30 20:58:00 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 53ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    4:     <title>Nameofapp</title>
+    5: 
+    6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8: 
+    9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   10: 
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___96708743363420778_70133832511080'
+Started GET "/" for 127.0.0.1 at 2017-10-30 20:58:26 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 32ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    4:     <title>Nameofapp</title>
+    5: 
+    6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8: 
+    9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   10: 
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___96708743363420778_70133833807820'
+Started GET "/" for 127.0.0.1 at 2017-10-30 20:59:00 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 36ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    3:   <head>
+    4:     <title>Nameofapp</title>
+    5: 
+    6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    7: 
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9: 
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___96708743363420778_70133898310120'
+Started GET "/" for 127.0.0.1 at 2017-10-30 20:59:23 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 46ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    3:   <head>
+    4:     <title>Nameofapp</title>
+    5: 
+    6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    7: 
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9: 
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___96708743363420778_70133897700260'
+Started GET "/" for 127.0.0.1 at 2017-10-31 08:17:43 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 1316ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    3:   <head>
+    4:     <title>Nameofapp</title>
+    5: 
+    6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    7: 
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9: 
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__1478591505629079641_47199681117340'
+Started GET "/" for 127.0.0.1 at 2017-10-31 09:35:42 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 3057ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    4:     <title>Nameofapp</title>
+    5: 
+    6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8: 
+    9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___19367515227514983_46918681369700'
+Started GET "/" for 127.0.0.1 at 2017-10-31 09:37:24 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 36ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    3:   <head>
+    4:     <title>Nameofapp</title>
+    5: 
+    6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    7: 
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9: 
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___19367515227514983_46918692602200'
+Started GET "/" for 127.0.0.1 at 2017-10-31 09:37:49 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 1060ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+    3:   <head>
+    4:     <title>Nameofapp</title>
+    5: 
+    6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    7: 
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9: 
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___378453797841488764_47325691230940'
+Started GET "/" for 127.0.0.1 at 2017-10-31 09:38:14 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 643ms (Views: 637.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 09:40:47 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 294ms (Views: 288.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 09:41:48 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 93ms (Views: 92.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 09:45:59 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (44.3ms)
+Completed 500 Internal Server Error in 147ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+     6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+     7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+     8: 
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    11: 
+    12:     <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___378453797841488764_47325710049420'
+Started GET "/" for 127.0.0.1 at 2017-10-31 09:47:35 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 43ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+     6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+     7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+     8: 
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    11: 
+    12:     <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___378453797841488764_47325707151820'
+Started GET "/" for 127.0.0.1 at 2017-10-31 09:48:46 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 38ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/ibtesam/nameofapp/app/assets/config
+  /home/ibtesam/nameofapp/app/assets/images
+  /home/ibtesam/nameofapp/app/assets/javascripts
+  /home/ibtesam/nameofapp/app/assets/stylesheets
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ibtesam/nameofapp/node_modules):
+     6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+     7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+     8: 
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    11: 
+    12:     <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___378453797841488764_47325703004300'
+Started GET "/" for 127.0.0.1 at 2017-10-31 09:53:11 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (863.6ms)
+Completed 200 OK in 1833ms (Views: 1107.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 09:56:44 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 85ms (Views: 83.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 10:38:27 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (232.5ms)
+Completed 200 OK in 1409ms (Views: 1163.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 10:43:15 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 120ms (Views: 118.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 10:43:31 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 84ms (Views: 82.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 10:49:26 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 51ms (Views: 50.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 10:49:54 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 89ms (Views: 87.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 10:52:46 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 452ms (Views: 450.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 10:54:23 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 173ms (Views: 172.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 10:55:02 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 69ms (Views: 67.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 10:57:09 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 160ms (Views: 158.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 10:58:27 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 58ms (Views: 56.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 10:59:10 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 162ms (Views: 160.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 11:32:14 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 167ms (Views: 164.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 11:32:39 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 248ms (Views: 246.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 11:33:42 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 217ms (Views: 215.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 11:35:12 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 77ms (Views: 71.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 11:36:48 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 214ms (Views: 209.9ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2017-10-31 11:39:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-10-31 11:39:14 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 83ms (Views: 81.9ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-10-31 11:40:15 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 55ms (Views: 53.8ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-10-31 11:41:03 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 140ms (Views: 135.3ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-31 11:41:43 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 76ms (Views: 74.6ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-31 11:46:58 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 190ms (Views: 189.0ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-31 11:48:36 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 153ms (Views: 151.9ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-31 11:50:25 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 178ms (Views: 176.6ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-31 11:51:25 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 158ms (Views: 156.6ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-10-31 11:51:39 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 50ms (Views: 48.9ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-31 11:52:07 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 66ms (Views: 65.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 11:52:14 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 76ms (Views: 75.4ms)
+
+
