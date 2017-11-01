@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chewy">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,9 +32,9 @@
             </div> <!--end navbar-header -->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="about.html.erb">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/static_pages/index">Home</a></li>
+                    <li><a href="/static_pages/about">About</a></li>
+                    <li><a href="/static_pages/contact">Contact</a></li>
                 </ul>
             </div> <!-- end navbar-collaps -->
         </div> <!-- end nav container-->
