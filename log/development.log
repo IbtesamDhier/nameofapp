@@ -2897,3 +2897,58 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 256ms (Views: 254.8ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-02 15:17:47 +0200
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (3.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 557ms (Views: 409.3ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 15:53:08 +0200
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (19.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 295ms (Views: 157.6ms | ActiveRecord: 43.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 15:56:05 +0200
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 106ms (Views: 102.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 15:57:19 +0200
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 160ms (Views: 152.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-11-02 16:00:18 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 176ms (Views: 147.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-11-02 16:00:27 +0200
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 197ms (Views: 195.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/show" for 127.0.0.1 at 2017-11-02 16:01:45 +0200
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 125ms (Views: 123.5ms)
+
+

@@ -1,0 +1,16 @@
+
+
+<div class="container">
+	<div class="header">
+		<h1>Featured Product:</h1>
+	</div>
+    <div class="thumbnail">
+      <%= image_tag(@featured_product.image_url, class: "img-responsive product-img") %>
+      <div class="caption">
+        <h3><%= @featured_product.name%></h3>
+        <p><%= @featured_product.colour%></p>
+        <p><%= @featured_product.description%></p>
+        <strong><%= @featured_product.price%></strong>
+      </div>
+    </div>
+</div>
