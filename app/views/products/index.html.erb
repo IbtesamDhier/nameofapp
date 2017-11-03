@@ -8,20 +8,9 @@
     <h1>Our Products</h1>
   </div>
   <div class="row">
-    <% @products.each do |product| %>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <%= image_tag(product.image_url, class: "img-responsive product-img") %>
-      <div class="caption">
-        <h3><%= product.name%></h3>
-        <p><%= product.colour%></p>
-        <p><%= product.description%></p>
-        <strong><%= product.price%></strong>
-        <p class="actions" ><%= link_to 'Show', product %> <%= link_to 'Edit', edit_product_path(product) %> <%= link_to 'Destroy', product, method: :delete, data:{ confirm: 'Are you sure?' } %>
-         </p>
-      </div>
-    </div>
-  </div>
+    
+  <% @products.each do |product| %>
+    <%= render product %>
   <% end %>
 </div>
 </div>
