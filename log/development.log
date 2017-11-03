@@ -3496,3 +3496,36 @@ Processing by StaticPagesController#landing_page as HTML
 Completed 200 OK in 400ms (Views: 397.7ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/products/3" for 127.0.0.1 at 2017-11-03 21:17:18 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (33.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (70.4ms)
+Completed 200 OK in 817ms (Views: 724.4ms | ActiveRecord: 33.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-03 21:17:49 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 628ms (Views: 625.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-03 21:18:34 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 376ms (Views: 374.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-03 21:21:34 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 496ms (Views: 494.7ms | ActiveRecord: 0.3ms)
+
+
