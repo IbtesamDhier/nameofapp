@@ -4,9 +4,13 @@
     <title>IBTE Fashion</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chewy">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Della Respira">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spirax">
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 
 
@@ -27,15 +31,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="projectName navbar-brand" href="#">
-                IBTE Company
-                </a> <!--end projectName -->
+                <%= link_to "IBTE FASHION", root_path, class: "navbar-brand" %> <!--end projectName -->
             </div> <!--end navbar-header -->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/static_pages/index">Home</a></li>
-                    <li><a href="/static_pages/about">About</a></li>
-                    <li><a href="/static_pages/contact">Contact</a></li>
+                   <!-- <li><%= link_to 'Landing Page', root_path %></li> -->
+                    <li><%= link_to 'Products', products_path%></li>
+                    <li><%= link_to 'About', static_pages_about_path %></li>
+                    <li><%= link_to 'Contact', static_pages_contact_path %></li>
                 </ul>
             </div> <!-- end navbar-collaps -->
         </div> <!-- end nav container-->
@@ -44,7 +47,13 @@
     <%= yield %>
 
     <footer class="site-footer">
-      &copy; 2017 Ibtesam DH
+        Copyright &copy; 2017 Ibtesam DH
+      <ul class="list-inline social-media pull-right">
+          <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+          <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+      </ul>
+      
     </footer>
   </body>
 </html>

@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .header {
-    font-family: Pacifico, sans-serif;
+    font-family: Spirax, sans-serif;
     color: #c55f1f;
     text-align: center;
     padding: 30px 0  20px;
@@ -15,21 +15,46 @@
 
 .navbar-default .navbar-brand {
     color : #ac7755;
-    font-family: Pacifico, sans-serif;
+    font-family:    Spirax  , sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 .navbar-default .navbar-nav > li > a{
     color : #ac7755;
-    font-family: Chewy, sans-serif;
-    font-size: 20px;
+    font-family:  Itim , sans-serif;
+    font-size: 17px;
+    -webkit-transition: color .5s;
+            transition: color .5s;
 }
 
+.navbar-default .navbar-nav > li > a:focus,
+ .navbar-default .navbar-nav > li > a:hover,
+ .navbar-default .navbar-brand:hover {
+    color: #ce6a3c;
+}
+
+
+
+/*site footer*/
+
 .site-footer {
-    text-align: center;
     color: #730E15;
     background-color: #e7e7e7;
-    padding: 20px 0;
+    padding: 20px 15px;
 }
+
+.site-footer .fa {
+    font-size: 1.5em;
+    -webkit-transition: color .5s;
+            transition: color .5s;
+
+}
+
+.site-footer .fa:hover {
+    color: #730e15b3;
+}
+
 
 #home {
     text-align: center;
@@ -46,12 +71,23 @@
 }
 
 
+/* Thumbnail */
+
+.thumbnail .caption h3 {
+    font-family: Itim;
+    margin-bottom: 25px;
+    font-weight: 600;
+
+}
+
 /* Carousel */
 
+/*
 .carousel {
     margin-left: -15px;
     margin-right: -15px;
 }
+*/
 
 .carousel-caption {
     bottom: 33%;
@@ -70,11 +106,12 @@
 }
 
 .carousel-indicators .active {
-    background-color: #000;
+    background-color: #730E15;
 }
 
 .carousel-indicators li {
-    border-color: #000;
+    border-color: #730E15;
+    border-radius: 0;
 }
 
 .carousel-inner > .item > a > img{
@@ -95,6 +132,11 @@
         padding-top: 0;
         bottom: 35%;
     }
+
+  .carousel-inner > .item > a > img {
+      height: 300px;
+  }
+
 }    
 
 
