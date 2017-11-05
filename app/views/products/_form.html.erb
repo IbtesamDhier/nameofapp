@@ -1,4 +1,8 @@
-<%= form_with(model: product, local: true) do |form| %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <%= form_with(model: product, local: true) do |form| %>
   <% if product.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
@@ -11,32 +15,40 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :product_name %>
+  <div class="form-group">
+    <%= form.label :name, class: 'form-label' %>
+    <%= form.text_field :name, id: :product_name, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :product_description %>
+  <div class="form-group">
+    <%= form.label :description, class: 'form-label' %>
+    <%= form.text_area :description, id: :product_description, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :image_url %>
-    <%= form.text_field :image_url, id: :product_image_url %>
+  <div class="form-group">
+    <%= form.label :image_url, class: 'form-label' %>
+    <%= form.text_field :image_url, id: :product_image_url, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :colour %><br>
-    <%= form.text_field :colour %>
+  <div class="form-group">
+    <%= form.label :colour, class: 'form-label' %>
+    <%= form.text_field :colour, id: :product_colour, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :price %><br>
-    <%= form.text_field :price %>
+  <div class="form-group">
+    <%= form.label :price, class: 'form-label' %>
+    <div class="input-group"> 
+        <span class="input-group-addon">$</span>
+        <%= form.text_field :price, class: 'form-control', type:"number", id: :product_price%>
+    </div>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: 'btn btn-primary'%>
   </div>
 <% end %>
+
+  </div>
+  <div class="col-md-4"></div>
+  </div>
+</div>

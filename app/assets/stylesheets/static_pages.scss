@@ -29,10 +29,23 @@
 }
 
 .navbar-default .navbar-nav > li > a:focus,
- .navbar-default .navbar-nav > li > a:hover,
- .navbar-default .navbar-brand:hover {
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-brand:hover {
     color: #ce6a3c;
 }
+
+.btn-primary {
+    background-color: #ac7755;
+    border-color: #ac7755;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:active:focus {
+    background-color: #ce6a3c;
+    border-color: #ce6a3c;
+}
+
 
 
 
@@ -79,6 +92,12 @@
     font-weight: 600;
 
 }
+
+.thumbnail a>img,
+.thumbnail>img {
+    height: 250px;
+    min-width: 100%;
+} 
 
 /* Carousel */
 

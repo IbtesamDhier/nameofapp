@@ -4596,3 +4596,721 @@ Processing by StaticPagesController#index as HTML
 Completed 200 OK in 103ms (Views: 102.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/?example_key-Hello" for 127.0.0.1 at 2017-11-05 09:29:27 +0200
+Processing by StaticPagesController#index as HTML
+  Parameters: {"example_key-Hello"=>nil}
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (87.4ms)
+Completed 200 OK in 1139ms (Views: 1060.6ms)
+
+
+Started GET "/?example_key=Hello" for 127.0.0.1 at 2017-11-05 09:29:35 +0200
+Processing by StaticPagesController#index as HTML
+  Parameters: {"example_key"=>"Hello"}
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 175ms (Views: 173.5ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 09:29:39 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (248.5ms)
+Completed 200 OK in 472ms (Views: 389.5ms | ActiveRecord: 184.5ms)
+
+
+Started GET "/static_pages/landing_page/?example_key=lo" for 127.0.0.1 at 2017-11-05 09:29:56 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Parameters: {"example_key"=>"lo"}
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 155ms (Views: 153.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-11-05 09:30:06 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 276ms (Views: 252.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 09:32:52 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 243ms (Views: 239.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/static_pages/landing_page/?example_key=2" for 127.0.0.1 at 2017-11-05 09:33:03 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Parameters: {"example_key"=>"2"}
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (3.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 118ms (Views: 113.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 10:04:22 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 129ms (Views: 127.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 10:39:02 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 110ms (Views: 109.1ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=bag&commit=Search" for 127.0.0.1 at 2017-11-05 10:39:10 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"bag", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (8.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (lower(name) LIKE '%bag%')[0m
+  Rendered products/_product.html.erb (15.4ms)
+  Rendered products/index.html.erb within layouts/application (77.3ms)
+Completed 200 OK in 272ms (Views: 186.6ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-11-05 10:39:23 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.0ms)
+  Rendered products/_product.html.erb (1.2ms)
+  Rendered products/_product.html.erb (1.2ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (2.7ms)
+  Rendered products/_product.html.erb (4.3ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (1.6ms)
+  Rendered products/index.html.erb within layouts/application (66.7ms)
+Completed 200 OK in 173ms (Views: 171.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=sun&commit=Search" for 127.0.0.1 at 2017-11-05 10:39:27 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"sun", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (lower(name) LIKE '%sun%')[0m
+  Rendered products/_product.html.erb (3.2ms)
+  Rendered products/index.html.erb within layouts/application (107.4ms)
+Completed 200 OK in 193ms (Views: 189.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 10:40:08 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (55.6ms)
+Completed 200 OK in 244ms (Views: 205.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=bag&commit=Search" for 127.0.0.1 at 2017-11-05 10:40:16 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"bag", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (273.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name.downcase LIKE '%bag%')[0m
+  Rendered products/index.html.erb within layouts/application (300.4ms)
+Completed 500 Internal Server Error in 311ms (ActiveRecord: 273.1ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: name.downcase: SELECT "products".* FROM "products" WHERE (name.downcase LIKE '%bag%')):
+     9:   </div>
+    10:   <div class="row">
+    11:     
+    12:   <% @products.each do |product| %>
+    13:     <%= render product %>
+    14:   <% end %>
+    15: </div>
+  
+app/views/products/index.html.erb:12:in `_app_views_products_index_html_erb___130446591691879488_70220205285680'
+Started GET "/products?utf8=%E2%9C%93&q=bag&commit=Search" for 127.0.0.1 at 2017-11-05 10:41:02 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"bag", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (lower(name) LIKE '%bag%')[0m
+  Rendered products/_product.html.erb (9.9ms)
+  Rendered products/index.html.erb within layouts/application (65.3ms)
+Completed 200 OK in 272ms (Views: 241.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-11-05 10:41:27 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (8.8ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (3.0ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (6.4ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (1.2ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/index.html.erb within layouts/application (108.1ms)
+Completed 200 OK in 291ms (Views: 284.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=ba&commit=Search" for 127.0.0.1 at 2017-11-05 10:41:30 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"ba", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE '%ba%')[0m
+  Rendered products/_product.html.erb (2.7ms)
+  Rendered products/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 143ms (Views: 140.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=ba&commit=Search" for 127.0.0.1 at 2017-11-05 11:02:56 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"ba", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE '%ba%')[0m
+  Rendered products/_product.html.erb (9.6ms)
+  Rendered products/index.html.erb within layouts/application (45.3ms)
+Completed 200 OK in 644ms (Views: 629.3ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 11:12:40 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (116.2ms)
+Completed 200 OK in 1312ms (Views: 1307.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 11:15:18 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (72.4ms)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ibtesam/nameofapp/app/views/layouts/application.html.erb:43: syntax error, unexpected ':', expecting ')'
+r.append=( form.submit :class: 'btn btn-primary' 'Search' );
+                              ^):
+  
+app/views/layouts/application.html.erb:43: syntax error, unexpected ':', expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-11-05 11:16:47 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 96ms (Views: 95.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 11:18:00 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 112ms (Views: 110.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search=bag&commit=Search" for 127.0.0.1 at 2017-11-05 11:24:03 +0200
+Processing by StaticPagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"bag", "commit"=>"Search"}
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 170ms (Views: 169.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search=bag&commit=Search" for 127.0.0.1 at 2017-11-05 11:24:50 +0200
+Processing by StaticPagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"bag", "commit"=>"Search"}
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 137ms (Views: 135.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-11-05 11:24:56 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (13.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.8ms)
+  Rendered products/_product.html.erb (5.9ms)
+  Rendered products/_product.html.erb (9.1ms)
+  Rendered products/_product.html.erb (5.2ms)
+  Rendered products/_product.html.erb (5.0ms)
+  Rendered products/_product.html.erb (5.2ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/index.html.erb within layouts/application (109.4ms)
+Completed 200 OK in 211ms (Views: 183.8ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&search=sun&commit=Search" for 127.0.0.1 at 2017-11-05 11:25:05 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sun", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (4.2ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/index.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 155ms (Views: 153.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 11:26:15 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 1402ms (Views: 208.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=bag&commit=Search" for 127.0.0.1 at 2017-11-05 11:26:29 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"bag", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE '%bag%')[0m
+  Rendered products/_product.html.erb (56.0ms)
+  Rendered products/index.html.erb within layouts/application (66.5ms)
+Completed 200 OK in 175ms (Views: 171.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 11:27:13 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 123ms (Views: 120.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=bag&commit=Search" for 127.0.0.1 at 2017-11-05 11:27:27 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"bag", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE '%bag%')[0m
+  Rendered products/_product.html.erb (1.8ms)
+  Rendered products/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 146ms (Views: 143.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 11:28:29 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 156ms (Views: 154.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=ba&commit=Search" for 127.0.0.1 at 2017-11-05 11:28:36 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"ba", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE '%ba%')[0m
+  Rendered products/_product.html.erb (6.5ms)
+  Rendered products/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 149ms (Views: 137.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 11:29:49 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 159ms (Views: 154.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=ba&commit=Search" for 127.0.0.1 at 2017-11-05 11:29:55 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"ba", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE '%ba%')[0m
+  Rendered products/_product.html.erb (7.6ms)
+  Rendered products/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 137ms (Views: 134.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 11:30:29 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (6.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 110ms (Views: 100.4ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=ba&commit=Search" for 127.0.0.1 at 2017-11-05 11:30:34 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"ba", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE '%ba%')[0m
+  Rendered products/_product.html.erb (18.4ms)
+  Rendered products/index.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 163ms (Views: 161.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 12:07:51 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 428ms (Views: 426.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=sun&commit=Search" for 127.0.0.1 at 2017-11-05 12:07:57 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"sun", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE '%sun%')[0m
+  Rendered products/_product.html.erb (7.4ms)
+  Rendered products/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 151ms (Views: 149.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=sun&commit=Search" for 127.0.0.1 at 2017-11-05 12:16:36 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"sun", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE '%sun%')[0m
+  Rendered products/_product.html.erb (2.7ms)
+  Rendered products/index.html.erb within layouts/application (43.3ms)
+Completed 200 OK in 1222ms (Views: 1200.7ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=sun&commit=Search" for 127.0.0.1 at 2017-11-05 12:19:41 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"sun", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.9ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE '%sun%')[0m
+  Rendered products/_product.html.erb (1.9ms)
+  Rendered products/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 1730ms (Views: 1724.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=sun&commit=Search" for 127.0.0.1 at 2017-11-05 12:21:18 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"sun", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE '%sun%')[0m
+  Rendered products/_product.html.erb (5.3ms)
+  Rendered products/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 470ms (Views: 466.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 12:21:44 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 180ms (Views: 173.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 12:21:49 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 121ms (Views: 119.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 12:23:18 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (5.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 478ms (Views: 471.6ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 12:23:21 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 120ms (Views: 118.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 12:23:29 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 95ms (Views: 93.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 12:24:11 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 527ms (Views: 525.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=ba&commit=Search" for 127.0.0.1 at 2017-11-05 12:24:29 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"ba", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE '%ba%')[0m
+  Rendered products/_product.html.erb (4.1ms)
+  Rendered products/index.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 247ms (Views: 244.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=ba&commit=Search" for 127.0.0.1 at 2017-11-05 12:24:51 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"ba", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE '%ba%')[0m
+  Rendered products/_product.html.erb (5.7ms)
+  Rendered products/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 183ms (Views: 176.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 12:26:05 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 720ms (Views: 719.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=b&commit=Search" for 127.0.0.1 at 2017-11-05 12:26:10 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"b", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE '%b%')[0m
+  Rendered products/_product.html.erb (6.2ms)
+  Rendered products/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 146ms (Views: 141.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 12:27:24 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 579ms (Views: 576.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products?utf8=%E2%9C%93&q=&commit=Search" for 127.0.0.1 at 2017-11-05 12:27:26 +0200
+Processing by ProductsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"", "commit"=>"Search"}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE '%%')[0m
+  Rendered products/_product.html.erb (3.8ms)
+  Rendered products/_product.html.erb (2.0ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/index.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 165ms (Views: 158.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/3/edit" for 127.0.0.1 at 2017-11-05 12:32:23 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (3.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (13.2ms)
+  Rendered products/edit.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 661ms (Views: 627.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/products/3/edit" for 127.0.0.1 at 2017-11-05 12:43:03 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (74.4ms)
+  Rendered products/edit.html.erb within layouts/application (80.6ms)
+Completed 200 OK in 206ms (Views: 202.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/3/edit" for 127.0.0.1 at 2017-11-05 12:47:38 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (12.4ms)
+  Rendered products/edit.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 161ms (Views: 156.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/3/edit" for 127.0.0.1 at 2017-11-05 12:49:09 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (16.5ms)
+  Rendered products/edit.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 114ms (Views: 110.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/3/edit" for 127.0.0.1 at 2017-11-05 12:49:42 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (11.7ms)
+  Rendered products/edit.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 143ms (Views: 137.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/3/edit" for 127.0.0.1 at 2017-11-05 12:50:24 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (5.5ms)
+  Rendered products/edit.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 153ms (Views: 148.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/3/edit" for 127.0.0.1 at 2017-11-05 12:51:19 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (17.4ms)
+  Rendered products/edit.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 179ms (Views: 175.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/3/edit" for 127.0.0.1 at 2017-11-05 12:53:45 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (6.1ms)
+  Rendered products/edit.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 376ms (Views: 371.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/3/edit" for 127.0.0.1 at 2017-11-05 12:56:04 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (74.9ms)
+  Rendered products/edit.html.erb within layouts/application (78.6ms)
+Completed 200 OK in 1565ms (Views: 1557.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/products/3" for 127.0.0.1 at 2017-11-05 12:56:24 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SLyqptPzVb/UJRVdSHbsvxJNFo/NPLRyU5OUfU1y6GlFXfgKdZMeNNXZEdyN0tTekJzSPzx4ILJndG0tiAj/hg==", "product"=>{"name"=>"Shoes", "description"=>"Brown Shoes for Men", "image_url"=>"https://images.unsplash.com/photo-1426649397221-b62c5a7824ee?auto=format&fit=crop&w=780&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D", "colour"=>"Light brown", "price"=>"55"}, "commit"=>"Update Product", "id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (23.3ms)[0m  [1m[33mUPDATE "products" SET "price" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["price", 55.0], ["updated_at", "2017-11-05 10:56:24.257794"], ["id", 3]]
+  [1m[35m (32.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/3
+Completed 302 Found in 120ms (ActiveRecord: 55.7ms)
+
+
+Started GET "/products/3" for 127.0.0.1 at 2017-11-05 12:56:24 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 278ms (Views: 245.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/3" for 127.0.0.1 at 2017-11-05 12:57:17 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (3500.1ms)
+Completed 500 Internal Server Error in 3510ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<#<Class:0x00007fbad5baee78>:0x00007fbad8c3e368>
+Did you mean?  @product):
+     8:         <h3><%= @product.name%></h3>
+     9:         <p><%= @product.colour%></p>
+    10:         <p><%= @product.description%></p>
+    11:         <strong><<%= number_to_currency((product.price), unit: "$") %></strong>
+    12:         <p class="actions" ><%= link_to 'Edit', edit_product_path(@product) %> <%= link_to 'Back', products_path %>
+    13:          </p>
+    14:       </div>
+  
+app/views/products/show.html.erb:11:in `_app_views_products_show_html_erb___1302558667170484730_70220238683400'
+Started GET "/products/3" for 127.0.0.1 at 2017-11-05 12:57:51 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 142ms (Views: 131.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/3/edit" for 127.0.0.1 at 2017-11-05 12:57:59 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (10.5ms)
+  Rendered products/edit.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 212ms (Views: 208.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-11-05 12:58:07 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (5.5ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (3.5ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/index.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 170ms (Views: 167.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-11-05 12:58:23 +0200
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (12.7ms)
+  Rendered products/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 172ms (Views: 149.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-11-05 12:59:12 +0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OZ+eHvhf1zhAU7WMqU3/+waMoAzOwTK+vbO+rpmJMwpCkt+wXeM3INvG3gMkiV6Wa7RoknNuEq4q7JDym+5wQg==", "product"=>{"name"=>"j", "description"=>"kl", "image_url"=>"https://images.unsplash.com/photo-1444076295597-e246c794dc5f?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D", "colour"=>"jjk", "price"=>"20"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (7.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour", "price") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "j"], ["description", "kl"], ["image_url", "https://images.unsplash.com/photo-1444076295597-e246c794dc5f?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"], ["created_at", "2017-11-05 10:59:12.154608"], ["updated_at", "2017-11-05 10:59:12.154608"], ["colour", "jjk"], ["price", 20.0]]
+  [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/9
+Completed 302 Found in 38ms (ActiveRecord: 18.5ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2017-11-05 12:59:12 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (4.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 240ms (Views: 233.1ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/products/9/edit" for 127.0.0.1 at 2017-11-05 12:59:19 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (88.1ms)
+  Rendered products/edit.html.erb within layouts/application (92.0ms)
+Completed 200 OK in 252ms (Views: 247.1ms | ActiveRecord: 0.2ms)
+
+

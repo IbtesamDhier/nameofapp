@@ -34,6 +34,12 @@
                 <%= link_to "IBTE FASHION", root_path, class: "navbar-brand" %> <!--end projectName -->
             </div> <!--end navbar-header -->
             <div class="navbar-collapse collapse">
+                <%= form_with(url: products_path, method: 'get', local: true, class: 'navbar-form navbar-right') do |form| %>
+                    <div class="form-group">
+                        <%= form.text_field :q, id: 'q', value: params[:q], class: 'form-control' %>
+                    </div>
+                    <%= submit_tag("Search", class: "btn btn-primary") %>
+                <% end %>
                 <ul class="nav navbar-nav navbar-right">
                     <li><%= link_to 'Landing Page', static_pages_landing_page_path %></li> 
                     <li><%= link_to 'Products', products_path%></li>
