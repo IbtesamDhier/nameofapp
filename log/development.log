@@ -4339,3 +4339,260 @@ Processing by StaticPagesController#contact as HTML
 Completed 200 OK in 164ms (Views: 162.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/static_pages/index" for 127.0.0.1 at 2017-11-05 08:10:46 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (46.3ms)
+Completed 200 OK in 2414ms (Views: 2272.9ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-11-05 08:12:13 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (74.7ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (4.8ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (15.8ms)
+  Rendered products/index.html.erb within layouts/application (408.2ms)
+Completed 200 OK in 580ms (Views: 500.3ms | ActiveRecord: 20.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-11-05 08:13:37 +0200
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (62.2ms)
+  Rendered products/new.html.erb within layouts/application (125.9ms)
+Completed 200 OK in 305ms (Views: 265.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-11-05 08:14:53 +0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+OTYDoHbCFEDEyxxHF47Z1NsJjHO0jLjcFnV47+5Tl2D6ZmgJGfoSZiGR/6RmpoKPlTur3N9EvPnBvu/vd4NFQ==", "product"=>{"name"=>"test", "description"=>"dd", "image_url"=>"https://images.unsplash.com/photo-1444076295597-e246c794dc5f?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D", "colour"=>"red", "price"=>"45"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (49.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour", "price") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "test"], ["description", "dd"], ["image_url", "https://images.unsplash.com/photo-1444076295597-e246c794dc5f?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"], ["created_at", "2017-11-05 06:14:53.824133"], ["updated_at", "2017-11-05 06:14:53.824133"], ["colour", "red"], ["price", 45.0]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/6
+Completed 302 Found in 596ms (ActiveRecord: 55.8ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-11-05 08:14:54 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 256ms (Views: 240.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-11-05 08:16:37 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (8.8ms)
+  Rendered products/_product.html.erb (1.4ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (5.8ms)
+  Rendered products/index.html.erb within layouts/application (204.1ms)
+Completed 200 OK in 399ms (Views: 376.3ms | ActiveRecord: 116.1ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-11-05 08:16:58 +0200
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (17.2ms)
+  Rendered products/new.html.erb within layouts/application (93.6ms)
+Completed 200 OK in 294ms (Views: 292.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-11-05 08:17:02 +0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vqWmFMJXRnTJWizRl+tuOoqZFRXac1QuDm8j/prkA5vFqOe6Z+umbFLPR14aL89X56Hdi2fcdD6ZMA2imINA0w==", "product"=>{"name"=>"", "description"=>"", "image_url"=>"", "colour"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.9ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["description", ""], ["image_url", ""], ["created_at", "2017-11-05 06:17:02.030292"], ["updated_at", "2017-11-05 06:17:02.030292"], ["colour", ""]]
+  [1m[35m (164.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/7
+Completed 302 Found in 188ms (ActiveRecord: 170.8ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2017-11-05 08:17:02 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 201ms (Views: 194.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-11-05 08:17:09 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (3.0ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (138.3ms)
+  Rendered products/_product.html.erb (2.5ms)
+  Rendered products/_product.html.erb (1.5ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (1.7ms)
+  Rendered products/index.html.erb within layouts/application (481.5ms)
+Completed 200 OK in 996ms (Views: 967.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2017-11-05 08:17:17 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (149.8ms)
+  Rendered products/edit.html.erb within layouts/application (191.9ms)
+Completed 200 OK in 313ms (Views: 298.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-11-05 08:17:49 +0200
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (36.7ms)
+  Rendered products/new.html.erb within layouts/application (60.3ms)
+Completed 200 OK in 471ms (Views: 320.0ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-11-05 08:17:53 +0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ljdGJEcnSAgIBmlgSuxYPK3NHrU0ROi0LqzvPCAVVT7tOgeK4puoEJOTAu/HKPlRwPXWK4nryKS588FgInIWdg==", "product"=>{"name"=>"", "description"=>"", "image_url"=>"", "colour"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (10.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["description", ""], ["image_url", ""], ["created_at", "2017-11-05 06:17:53.083631"], ["updated_at", "2017-11-05 06:17:53.083631"], ["colour", ""]]
+  [1m[35m (26.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/8
+Completed 302 Found in 65ms (ActiveRecord: 36.9ms)
+
+
+Started GET "/products/8" for 127.0.0.1 at 2017-11-05 08:17:53 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 150ms (Views: 139.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-11-05 08:17:59 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (16.7ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (11.2ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (9.7ms)
+  Rendered products/_product.html.erb (1.2ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/index.html.erb within layouts/application (185.9ms)
+Completed 200 OK in 411ms (Views: 410.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 08:23:59 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 162ms (Views: 158.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 08:24:03 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 174ms (Views: 172.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 08:24:06 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 157ms (Views: 155.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 08:24:07 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 158ms (Views: 157.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 08:24:08 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 148ms (Views: 146.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 08:24:09 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 139ms (Views: 137.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 08:24:10 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 172ms (Views: 168.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 08:28:46 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 94ms (Views: 92.7ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 08:28:54 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (59.5ms)
+Completed 200 OK in 231ms (Views: 199.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-11-05 08:29:00 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (5.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (3.0ms)
+  Rendered products/_product.html.erb (9.9ms)
+  Rendered products/_product.html.erb (1.2ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/_product.html.erb (5.4ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (2.2ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/index.html.erb within layouts/application (90.3ms)
+Completed 200 OK in 190ms (Views: 180.7ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-11-05 08:29:03 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 128ms (Views: 126.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-05 08:29:07 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 193ms (Views: 191.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 08:29:09 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 103ms (Views: 102.2ms | ActiveRecord: 0.0ms)
+
+
