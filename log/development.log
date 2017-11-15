@@ -5314,3 +5314,1260 @@ Processing by ProductsController#edit as HTML
 Completed 200 OK in 252ms (Views: 247.1ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-05 14:42:29 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (554.4ms)
+Completed 200 OK in 2125ms (Views: 1844.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-05 14:44:39 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 109ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-05 14:50:56 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (563.1ms)
+Completed 200 OK in 1650ms (Views: 760.1ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 14:51:12 +0200
+Processing by StaticPagesController#thank_you as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FRLNadGhiaot9BGxth5BZBjJRxBr6UCrBSIBpXPG1NIY85/Fd8HCISwIFTBzunkFmhiDoJqt1Gsxxfj1trzDPQ==", "name"=>"", "email"=>"", "message"=>"", "commit"=>"Send"}
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 167ms (Views: 153.8ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 14:51:16 +0200
+Processing by StaticPagesController#thank_you as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FRLNadGhiaot9BGxth5BZBjJRxBr6UCrBSIBpXPG1NIY85/Fd8HCISwIFTBzunkFmhiDoJqt1Gsxxfj1trzDPQ==", "name"=>"", "email"=>"", "message"=>"", "commit"=>"Send"}
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 124ms (Views: 115.6ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 14:51:17 +0200
+Processing by StaticPagesController#thank_you as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FRLNadGhiaot9BGxth5BZBjJRxBr6UCrBSIBpXPG1NIY85/Fd8HCISwIFTBzunkFmhiDoJqt1Gsxxfj1trzDPQ==", "name"=>"", "email"=>"", "message"=>"", "commit"=>"Send"}
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 194ms (Views: 184.8ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 14:51:25 +0200
+Processing by StaticPagesController#thank_you as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FRLNadGhiaot9BGxth5BZBjJRxBr6UCrBSIBpXPG1NIY85/Fd8HCISwIFTBzunkFmhiDoJqt1Gsxxfj1trzDPQ==", "name"=>"s", "email"=>"ss", "message"=>"ss", "commit"=>"Send"}
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (502.6ms)
+Completed 200 OK in 1543ms (Views: 1539.7ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 14:51:27 +0200
+Processing by StaticPagesController#thank_you as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FRLNadGhiaot9BGxth5BZBjJRxBr6UCrBSIBpXPG1NIY85/Fd8HCISwIFTBzunkFmhiDoJqt1Gsxxfj1trzDPQ==", "name"=>"s", "email"=>"ss", "message"=>"ss", "commit"=>"Send"}
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 179ms (Views: 168.4ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 14:51:28 +0200
+Processing by StaticPagesController#thank_you as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FRLNadGhiaot9BGxth5BZBjJRxBr6UCrBSIBpXPG1NIY85/Fd8HCISwIFTBzunkFmhiDoJqt1Gsxxfj1trzDPQ==", "name"=>"s", "email"=>"ss", "message"=>"ss", "commit"=>"Send"}
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 171ms (Views: 161.6ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 14:51:29 +0200
+Processing by StaticPagesController#thank_you as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FRLNadGhiaot9BGxth5BZBjJRxBr6UCrBSIBpXPG1NIY85/Fd8HCISwIFTBzunkFmhiDoJqt1Gsxxfj1trzDPQ==", "name"=>"s", "email"=>"ss", "message"=>"ss", "commit"=>"Send"}
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 148ms (Views: 134.9ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 14:51:30 +0200
+Processing by StaticPagesController#thank_you as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FRLNadGhiaot9BGxth5BZBjJRxBr6UCrBSIBpXPG1NIY85/Fd8HCISwIFTBzunkFmhiDoJqt1Gsxxfj1trzDPQ==", "name"=>"s", "email"=>"ss", "message"=>"ss", "commit"=>"Send"}
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 567ms (Views: 551.0ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 14:51:45 +0200
+Processing by StaticPagesController#thank_you as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FRLNadGhiaot9BGxth5BZBjJRxBr6UCrBSIBpXPG1NIY85/Fd8HCISwIFTBzunkFmhiDoJqt1Gsxxfj1trzDPQ==", "name"=>"s", "email"=>"ss@gmail.com", "message"=>"ss", "commit"=>"Send"}
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 192ms (Views: 170.4ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-05 14:54:01 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 156ms (Views: 155.3ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-05 14:54:09 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (540.4ms)
+Completed 200 OK in 1103ms (Views: 635.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-05 14:54:14 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 308ms (Views: 301.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 14:54:31 +0200
+Processing by StaticPagesController#thank_you as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tIFiIx5e9YhCNFK7z77RGfH1PVnzTNyyOrdulq8eJ/34sB4UyBQ8bwOo74M7I5ytERHBqF2yewO3Lg5G064Feg==", "name"=>"g", "email"=>"gf@gmail.com", "message"=>"ss", "commit"=>"Send"}
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 148ms (Views: 136.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-05 14:55:56 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 138ms (Views: 130.1ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 14:56:04 +0200
+Processing by StaticPagesController#thank_you as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SV0+hhAh9HxLrGs+DmRPzmbtN1/05yEvtIZ4h/pl/3tEvGwqtkG/90pQb7/LwHev5Dzz7wWjte+AYYHXPx/olA==", "name"=>"s", "email"=>"ss@gmail.com", "message"=>"ss", "commit"=>"Send"}
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 121ms (Views: 118.6ms)
+
+
+Started GET "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 14:57:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/thank_you"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-05 14:57:43 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 135ms (Views: 133.9ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 14:57:54 +0200
+Processing by StaticPagesController#thank_you as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QoYcMdROzOr51NixdzIUqqi2TRrYHS6exTRFln6IRhRPZ06dci6HYfgo3DCylizLKmeJqilZul7x07zGu/JR+w==", "name"=>"", "email"=>"", "message"=>"", "commit"=>"Send"}
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 129ms (Views: 123.6ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-05 15:06:48 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 742ms (Views: 740.8ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 15:06:51 +0200
+Processing by StaticPagesController#thank_you as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SJ/zjh7SD4Z4pz3mpWyTfz4Ck5U5YdUuYyltqQ4tZggEro+5yJjGYTk7gN5R8d7L3uZvZJefcp/usA15cp1Ejw==", "name"=>"", "email"=>"", "message"=>"", "commit"=>"Send"}
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 150ms (Views: 141.4ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-05 15:08:41 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 443ms (Views: 440.7ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 15:08:44 +0200
+Processing by StaticPagesController#thank_you as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wNLKmsGni3Xzt0yk+/qp5DNf3LelaiO4pSUYHeZMy3CM47atF+1CkrIr8ZwPZ+RQ07sgRguUhAkovHjNmvzp9w==", "name"=>"", "email"=>"", "message"=>"", "commit"=>"Send"}
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 168ms (Views: 164.5ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-05 15:10:52 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 516ms (Views: 514.4ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 15:10:57 +0200
+Processing by StaticPagesController#thank_you as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6YI3dbnZlfqaIPGPTIpPoVqkrB7afyCqO3o0uG2DEc+ls0tCb5NcHdu8TLe4FwIVukBQ73SBhxu241RoETMzSA==", "name"=>"", "email"=>"", "message"=>"", "commit"=>"Send"}
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 113ms (Views: 111.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 15:11:03 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 168ms (Views: 166.6ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-05 15:23:43 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 130ms (Views: 126.2ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-05 15:23:57 +0200
+Processing by StaticPagesController#thank_you as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I9fNlHyeqTRbYofnXHx2LzWqlf6LvqjRxZOdrWukeGxv5rGjqtRg0xr+Ot+o4Tub1U5pDyVAD2BICv19FxRa6w==", "name"=>"k", "email"=>"k@gmail.com", "message"=>"k", "commit"=>"Send"}
+ActionMailer::Base#mail: processed outbound mail in 3337.2ms
+Sent mail to ibtesam.dh2@gmail.com (222.1ms)
+Date: Sun, 05 Nov 2017 15:24:02 +0200
+From: k@gmail.com
+To: ibtesam.dh2@gmail.com
+Message-ID: <59ff10f219ce6_37f33fdd741f13dc412ab@ibtesam-VirtualBox.mail>
+Subject: A new contact form message from k
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+k
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4772ms (Views: 120.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 15:24:08 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 108ms (Views: 107.3ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-10 14:01:43 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (5711.1ms)
+Completed 200 OK in 14122ms (Views: 12611.5ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-10 14:02:12 +0200
+Processing by StaticPagesController#thank_you as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nY3B2zpM8BmA7Ra3ugVhZGEPBPTF6yf2hDBkpTPununRvL3s7AY5/sFxq49OmCzQgev4BWsVgEcJqQR1T168bg==", "name"=>"", "email"=>"", "message"=>"", "commit"=>"Send"}
+ActionMailer::Base#mail: processed outbound mail in 1248.6ms
+Sent mail to ibtesam.dh2@gmail.com (1778.8ms)
+Date: Fri, 10 Nov 2017 14:02:15 +0200
+To: ibtesam.dh2@gmail.com
+Message-ID: <5a059547e9fe1_37f33fdd741f151c41313@ibtesam-VirtualBox.mail>
+Subject: A new contact form message from
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (194.2ms)
+Completed 200 OK in 5360ms (Views: 961.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-10 14:02:24 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1800.6ms)
+Completed 200 OK in 5691ms (Views: 4280.7ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20171112143835)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (13.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171112143835"]]
+  [1m[35m (25.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_product_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_product_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_user_id' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-11-12 20:03:17 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1439.0ms)
+Completed 200 OK in 12448ms (Views: 12159.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToUsers (20171112180922)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.9ms)[0m  [1m[35mALTER TABLE "users" ADD "email" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "encrypted_password" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" varchar[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_sent_at" datetime[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_created_at" datetime[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "sign_in_count" integer DEFAULT 0 NOT NULL[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "current_sign_in_at" datetime[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "last_sign_in_at" datetime[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "current_sign_in_ip" varchar[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "last_sign_in_ip" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (114.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (10.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171112180922"]]
+  [1m[35m (744.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_product_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_product_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-12 20:14:46 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.1ms)
+  Rendered /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/registrations/new.html.erb within layouts/application (235.7ms)
+Completed 200 OK in 2079ms (Views: 1992.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-12 20:36:02 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/registrations/new.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 161ms (Views: 159.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-12 20:36:30 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fGNGq+j6vkJTJwspmAGbrH6mSy0LEH+gEuEjSShpbtZxghQHTpr1yVLbD6hdpaPN/HePnfpU62AmBtoZ7RN5OQ==", "user"=>{"email"=>"ibte@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ibte@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (8.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-11-12 18:36:30.552104"], ["updated_at", "2017-11-12 18:36:30.552104"], ["email", "ibte@gmail.com"], ["encrypted_password", "$2a$11$/27oxwHOSHhRxWxaam0eJ.WK1n54rzdqcTG6md.B3W82MHDaf.Hoa"]]
+  [1m[35m (18.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (24.7ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ?, "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2017-11-12 18:36:30.588538"], ["sign_in_count", 1], ["current_sign_in_at", "2017-11-12 18:36:30.585573"], ["last_sign_in_at", "2017-11-12 18:36:30.585573"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["id", 1]]
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 633ms (ActiveRecord: 62.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-12 20:36:30 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (8.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 176ms (Views: 148.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-11-12 20:36:44 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/gJ5Fbv61JLmsU/ZzfSgEVIJYglOQwLQVlkK8NMxZgTz4yu5HZqfGedNS1gIUJhw0Nimub8HlhBivvOgFktx6w=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 56ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-12 20:36:44 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 195ms (Views: 192.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static_pages/landing_page" for 127.0.0.1 at 2017-11-12 20:39:26 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (76.8ms)
+Completed 200 OK in 209ms (Views: 172.9ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-11-12 20:39:35 +0200
+Processing by OrdersController#index as HTML
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-12 20:39:35 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (5.1ms)
+  Rendered /home/ibtesam/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 266ms (Views: 196.9ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-11-12 20:39:54 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mXgOiAfxMzqOu+erHlv+c1Y6RQQXKvcwjWbPCWE4QkaH0hphuFDsnDCzI/sl5hriyVL9Fk7/J48GzbryyPBUng==", "user"=>{"email"=>"ibte@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ibte@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (9.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-11-12 18:39:55.090292"], ["sign_in_count", 2], ["updated_at", "2017-11-12 18:39:55.095422"], ["id", 1]]
+  [1m[35m (125.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 644ms (ActiveRecord: 135.4ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-11-12 20:39:55 +0200
+Processing by OrdersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 139ms (Views: 128.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-11-12 20:43:27 +0200
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eYx0U4JNJM1Z42J5vDiTBxFPlglYyb6cmKXnOd/e6/FZUnwnMhR5fbs7UfjTV01x34KeRAegxVjmaVmfx48Y6Q==", "id"=>"sign_out"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 30ms (ActiveRecord: 4.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  
+app/controllers/users_controller.rb:69:in `set_user'
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-11-12 20:44:00 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eYx0U4JNJM1Z42J5vDiTBxFPlglYyb6cmKXnOd/e6/FZUnwnMhR5fbs7UfjTV01x34KeRAegxVjmaVmfx48Y6Q=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 133ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-12 20:44:00 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 179ms (Views: 177.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 08:53:00 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (606.3ms)
+Completed 200 OK in 2045ms (Views: 1892.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 08:57:16 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 149ms (Views: 147.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:06:19 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (169.4ms)
+Completed 200 OK in 3169ms (Views: 2976.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:09:03 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 139ms (Views: 137.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:10:04 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 114ms (Views: 111.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:11:10 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (10.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 171ms (Views: 169.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:13:16 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (7.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 157ms (Views: 154.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-11-13 09:13:35 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (373.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (252.4ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (1.8ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (4.6ms)
+  Rendered products/index.html.erb within layouts/application (1142.9ms)
+Completed 200 OK in 1337ms (Views: 895.2ms | ActiveRecord: 374.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-11-13 09:13:41 +0200
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (60.9ms)
+  Rendered products/new.html.erb within layouts/application (80.2ms)
+Completed 200 OK in 235ms (Views: 207.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:14:53 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 114ms (Views: 112.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-11-13 09:15:35 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (1.8ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (3.9ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (4.6ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/index.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 131ms (Views: 128.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-11-13 09:15:40 +0200
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (12.3ms)
+  Rendered products/new.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 125ms (Views: 123.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:16:18 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 123ms (Views: 118.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:18:33 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (7.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 1365ms (Views: 1362.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:20:10 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 325ms (Views: 324.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:21:33 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 268ms (Views: 267.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:29:20 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 331ms (Views: 329.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:31:04 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 122ms (Views: 120.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-13 09:31:27 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 164ms (Views: 158.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-13 09:33:12 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 106ms (Views: 100.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-13 09:34:35 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 125ms (Views: 121.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:34:45 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (7.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 112ms (Views: 106.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-13 09:35:06 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (10.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 111ms (Views: 109.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:35:40 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 105ms (Views: 97.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-13 09:36:33 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (8.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 159ms (Views: 157.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-13 09:39:26 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 205ms (Views: 204.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-13 09:39:40 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 192ms (Views: 190.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:39:51 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 89ms (Views: 87.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-13 09:40:50 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ibtesam/nameofapp/app/views/devise/registrations/new.html.erb:35: syntax error, unexpected keyword_class, expecting ')'
+er "devise/shared/links" class: 'btn btn-primary' );@output_
+                              ^):
+  
+app/views/devise/registrations/new.html.erb:35: syntax error, unexpected keyword_class, expecting ')'
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-13 09:41:43 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 99ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:41:49 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (17.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 154ms (Views: 144.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2017-11-13 09:41:53 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 167ms (Views: 145.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/registeration/new" for 127.0.0.1 at 2017-11-13 09:42:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/registeration/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/registration/new" for 127.0.0.1 at 2017-11-13 09:42:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/registration/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/devise/registration/new" for 127.0.0.1 at 2017-11-13 09:43:15 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/devise/registration/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:44:11 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 165ms (Views: 162.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-13 09:45:01 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 111ms (Views: 110.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:50:17 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 124ms (Views: 121.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:50:27 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ulCV1kBbnbcP7DbGF/5xxg+/CE1WFaTY621SqEtDCRb009Klu76kM4cKAH6uK08evjhCCa689Nr6OpR+isUUQA==", "user"=>{"email"=>"ibte@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (24.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ibte@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 804ms (ActiveRecord: 24.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ulCV1kBbnbcP7DbGF/5xxg+/CE1WFaTY621SqEtDCRb009Klu76kM4cKAH6uK08evjhCCa689Nr6OpR+isUUQA==", "user"=>{"email"=>"ibte@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 546ms (Views: 122.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:50:44 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BzeTDhei7yVd8d256KBISYddBDjkDVd0fwK/CcYLOZKHkxV7CGkQxUy8mXkC6x1mK2mRRTIpaEbId+1SsBorPA==", "user"=>{"email"=>"ibte@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ibte@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (41.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-11-13 07:50:44.904387"], ["last_sign_in_at", "2017-11-12 18:39:55.090292"], ["sign_in_count", 3], ["updated_at", "2017-11-13 07:50:44.907288"], ["id", 1]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 626ms (ActiveRecord: 49.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-13 09:50:45 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (62.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 201ms (Views: 162.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-11-13 09:51:07 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kNp/Mzmkp0xet3HkXh0sLZIyA9v3Fal2fCtXzhm/GLcvUTeQDRUDseUdvzr/hkuwK0yQfK53wL0Rjco6YE7psQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 69ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-13 09:51:08 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 82ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 09:51:12 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 91ms (Views: 88.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 10:05:19 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 124ms (Views: 123.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 10:08:43 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 101ms (Views: 100.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 10:09:55 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (6.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 648ms (Views: 646.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 10:12:19 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 139ms (Views: 138.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-13 10:23:13 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 66ms (ActiveRecord: 13.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_in):
+  
+app/controllers/users_controller.rb:69:in `set_user'
+Started GET "/" for 127.0.0.1 at 2017-11-13 10:24:44 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 132ms (Views: 131.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-11-13 10:24:48 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 173ms (Views: 116.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2017-11-13 10:24:58 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 160ms (Views: 159.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-11-13 10:27:08 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 123ms (Views: 121.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password/new" for 127.0.0.1 at 2017-11-13 10:27:14 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.6ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 119ms (Views: 95.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/password" for 127.0.0.1 at 2017-11-13 10:27:37 +0200
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"07rxO9puwtHCVjeHe2vXA/XNgryW43X0GWklWzueqmgpnHICvM5m140QTKeRjSnSzxnDVcrbFSOUPgjgHiBQhg==", "user"=>{"email"=>""}, "commit"=>"Send me reset password instructions"}
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (10.1ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 188ms (Views: 140.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password" for 127.0.0.1 at 2017-11-13 10:32:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/password"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/password/new" for 127.0.0.1 at 2017-11-13 10:32:43 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 160ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password/new" for 127.0.0.1 at 2017-11-13 10:35:56 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (7.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 117ms (Views: 114.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-11-13 14:54:15 +0200
+Processing by OrdersController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-11-13 14:54:15 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (6.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 144ms (Views: 140.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-11-13 14:54:40 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tT4YxZk+RoG1yoU887EN1qTSAdiEIiD4Zg8ouQUim9+IswE4jIyq4/GQudmSUDhPZatXGa4vW2NdA7IwvUtM8A==", "user"=>{"email"=>"ibte@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ibte@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (122.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-11-13 12:54:40.748301"], ["last_sign_in_at", "2017-11-13 07:50:44.904387"], ["sign_in_count", 4], ["updated_at", "2017-11-13 12:54:40.750492"], ["id", 1]]
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 581ms (ActiveRecord: 131.3ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-11-13 14:54:40 +0200
+Processing by OrdersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 148ms (Views: 106.5ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-11-13 14:54:48 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gnaZad3dJHBiLiIaQ4ZwqAsVvRkcImA7540c1WYk/Q3qJUjrjBihiQBLtjyqzbkBEIjtVTR0PHZQpacOXidqGg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-13 14:54:48 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 98ms (Views: 97.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-11-13 14:54:50 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (9.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 114ms (Views: 112.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password/new" for 127.0.0.1 at 2017-11-13 14:54:53 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 164ms (Views: 160.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/password" for 127.0.0.1 at 2017-11-13 14:55:01 +0200
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UH1xlFZ7jP0MXx3e+OdV6rCE2hFr96CAfY2qKjMDiPRALdszNFxZMMVIflSphFfb/uds9jAotLD+gz74iW5wzg==", "user"=>{"email"=>"ibte@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ibte@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."reset_password_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["reset_password_token", "86dcca4ea5d7dbb546fdcd8f79af0108134d4f5b28a0efb3465c645fb09d7142"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  [1m[33mUPDATE "users" SET "reset_password_token" = ?, "reset_password_sent_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["reset_password_token", "86dcca4ea5d7dbb546fdcd8f79af0108134d4f5b28a0efb3465c645fb09d7142"], ["reset_password_sent_at", "2017-11-13 12:55:01.706122"], ["updated_at", "2017-11-13 12:55:01.708852"], ["id", 1]]
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+  Rendering devise/mailer/reset_password_instructions.html.erb
+  Rendered devise/mailer/reset_password_instructions.html.erb (0.7ms)
+Devise::Mailer#reset_password_instructions: processed outbound mail in 1512.0ms
+Sent mail to ibte@gmail.com (20254.5ms)
+Date: Mon, 13 Nov 2017 14:55:03 +0200
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: ibte@gmail.com
+Message-ID: <5a09962767644_60aa2b279f84299c7163c@ibtesam-VirtualBox.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello ibte@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/password/edit?reset_password_token=-Et-os1GwUmx4oKd9Vnx">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/login
+Completed 302 Found in 22569ms (ActiveRecord: 18.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-11-13 14:55:23 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 154ms (Views: 152.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-15 07:47:34 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (1709.3ms)
+Completed 200 OK in 6221ms (Views: 5562.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-15 07:48:23 +0200
+Processing by StaticPagesController#thank_you as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CGCDzXebHVMFEB/DOacVDyMley1HpVeRlKadk1DvyrobQuhV33h3CT45J2sVf3iJHcFU6OEcRGOIiPuf33jyHA==", "name"=>"R", "email"=>"I@gmail.com", "message"=>"f", "commit"=>"Send"}
+ActionMailer::Base#mail: processed outbound mail in 227.4ms
+Sent mail to ibtesam.dh2@gmail.com (25593.6ms)
+Date: Wed, 15 Nov 2017 07:48:24 +0200
+From: I@gmail.com
+To: ibtesam.dh2@gmail.com
+Message-ID: <5a0bd5285058d_60aa2b279f842910717fc@ibtesam-VirtualBox.mail>
+Subject: A new contact form message from R
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+f
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 27034ms (Views: 686.6ms | ActiveRecord: 0.0ms)
+
+
