@@ -6593,3 +6593,18 @@ Processing by StaticPagesController#contact as HTML
 Completed 200 OK in 7037ms (Views: 6924.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-15 14:29:47 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (187.9ms)
+Completed 200 OK in 2128ms (Views: 2050.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-11-15 14:30:03 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (491.5ms)
+Completed 200 OK in 1610ms (Views: 747.3ms | ActiveRecord: 52.1ms)
+
+
