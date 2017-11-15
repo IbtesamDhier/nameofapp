@@ -6571,3 +6571,25 @@ f
 Completed 200 OK in 27034ms (Views: 686.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-15 08:15:03 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (432.8ms)
+Completed 200 OK in 2304ms (Views: 2068.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-15 08:19:17 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (58.3ms)
+Completed 200 OK in 233ms (Views: 226.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-15 08:34:11 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (376.8ms)
+Completed 200 OK in 7037ms (Views: 6924.3ms | ActiveRecord: 0.0ms)
+
+
