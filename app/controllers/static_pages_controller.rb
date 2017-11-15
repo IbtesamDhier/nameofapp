@@ -15,6 +15,7 @@ class StaticPagesController < ApplicationController
       to: 'ibtesam.dh2@gmail.com',
       subject: "A new contact form message from #{@name}",
       body: @message).deliver_now
+end
 
 
 def create
