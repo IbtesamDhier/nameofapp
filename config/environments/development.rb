@@ -53,7 +53,12 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
 
-  ActionMailer::Base.smtp_settings = {
+  
+
+#any dynamic links that show up inside emails from your development environment generate the right URLs
+config.action_mailer.default_url_options = { host: 'localhost:3000' }
+
+ActionMailer::Base.smtp_settings = {
   address: 'smtp.sendgrid.net',
   port: '587',
   authentication: :plain,
@@ -62,8 +67,5 @@ Rails.application.configure do
   domain: 'heroku.com',
   enable_starttls_auto: true
 }
-
-#any dynamic links that show up inside emails from your development environment generate the right URLs
-config.action_mailer.default_url_options = { host: 'localhost:3000' }
 
 end
