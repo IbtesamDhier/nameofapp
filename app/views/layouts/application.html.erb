@@ -17,6 +17,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="../assets/javascripts/scripts.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
@@ -58,9 +59,15 @@
         </div> <!-- end nav container-->
     </nav>
 
-    <% flash.each do |key, value| %>
-        <div class="alert alert-<%= key %>"><%= value %></div>
-      <% end %>
+<!-- Flash Notice Tags -->
+    <% if notice %>
+      <div id="notice" class="alert alert-success"><%= notice %></div>
+    <% end %>
+    <% if alert %>
+      <div id="alert" class="alert alert-danger"><%= alert %></div>
+<% end %>
+    
+
 
     <%= yield %>
 
@@ -71,7 +78,12 @@
           <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
           <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
       </ul>
-      
     </footer>
+
+    <script type="">
+$(document).on('turbolinks:load ajaxSuccess', function() {
+    $( ".alert" ).delay( 1000 ).fadeOut( 3000 );
+});
+    </script>
   </body>
 </html>
