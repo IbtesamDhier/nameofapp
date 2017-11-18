@@ -8,11 +8,11 @@
         <h3><%= @product.name%></h3>
         <p><%= @product.colour%></p>
         <p><%= @product.description%></p>
-        <strong><%= number_to_currency((@product.price), unit: "$") %></strong>
+        <strong><%= @product.price %></strong><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
         <p class="actions" ><%= link_to 'Edit', edit_product_path(@product) %> <%= link_to 'Back', products_path %>
          </p>
+         <strong>rating goes here</strong>
       </div>
     </div>
 </div>
  
-

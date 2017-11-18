@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 	
     has_many :orders
-    has_one :comment
+    has_one :comments
+
 
 end
