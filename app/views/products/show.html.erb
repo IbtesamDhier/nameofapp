@@ -10,9 +10,17 @@
         <p><%= @product.description%></p>
         <strong><%= @product.price %></strong><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
         <p class="actions" ><%= link_to 'Edit', edit_product_path(@product) %> <%= link_to 'Back', products_path %>
-         </p>
-         <strong>rating goes here</strong>
+        </p>
+
+        <p>The hieghest rating for this product is <%= @product.highest_rating_comment.try(:rating) %> /5 with comment <%= @product.highest_rating_comment.try(:body) %> </p>
+        <p>The lowest rating for this product is <%= @product.lowest_rating_comment.try(:rating) %> /5 with comment <%= @product.lowest_rating_comment.try(:body) %></p>
+        <p>The comments for this product in desc order<%= Comment.rating_desc.pluck(:rating)%></p>
+        <p>The comments for this product in asc order<%= Comment.rating_asc.pluck(:rating)%></p>
+
       </div>
+    
     </div>
+<%= render 'new_comment' %>
+         <%= render 'comments' %>
 </div>
  
