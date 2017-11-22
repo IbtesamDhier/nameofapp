@@ -3,6 +3,9 @@ class Product < ApplicationRecord
 	has_many :comments
 
 
+  	validates :name, presence: true
+
+
 	def self.search(search_term)
     	search_term.strip! #Returns a copy of str with leading and trailing whitespace removed.
     	if (Rails.env.development? || Rails.env.test?)
