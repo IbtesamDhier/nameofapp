@@ -1,5 +1,5 @@
 
 
-$(document).on('turbolinks:load ajaxSuccess', function() {
-$(".alert").delay(600).fadeOut(800);
+$(document).on('turbolinks:load', function(){
+    $( ".alert" ).delay( 3000 ).fadeOut( 3000 );
 });
