@@ -16995,3 +16995,42 @@ Completed 200 OK in 286ms (Views: 259.6ms | ActiveRecord: 1.6ms)
 Completed 200 OK in 300ms (Views: 243.0ms | ActiveRecord: 7.7ms)
 
 
+Started GET "/products" for 127.0.0.1 at 2017-11-22 13:05:36 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (37.6ms)
+  Rendered products/index.html.erb within layouts/application (120.2ms)
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 11.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `average_rating' for nil:NilClass):
+     8:         <strong><%= product.price %></strong><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+     9:         <p class="actions" ><%= link_to 'Show', product %> <%= link_to 'Edit', edit_product_path(product) %> <%= link_to 'Destroy', product, method: :delete, data:{ confirm: 'Are you sure?' } %>
+    10:          </p>
+    11:         <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+    12:       </div>
+    13:     </div>
+    14:   </div>
+  
+app/views/products/_product.html.erb:11:in `_app_views_products__product_html_erb___3655827564625926983_69888986253720'
+app/views/products/index.html.erb:10:in `block in _app_views_products_index_html_erb__888893299026750303_46983655190980'
+app/views/products/index.html.erb:9:in `_app_views_products_index_html_erb__888893299026750303_46983655190980'
+Started GET "/products" for 127.0.0.1 at 2017-11-22 13:06:00 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  Rendered products/_product.html.erb (50.1ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 2]]
+  Rendered products/_product.html.erb (22.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 3]]
+  Rendered products/_product.html.erb (11.6ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 4]]
+  Rendered products/_product.html.erb (5.8ms)
+  Rendered products/index.html.erb within layouts/application (105.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 407ms (Views: 397.9ms | ActiveRecord: 7.6ms)
+
+

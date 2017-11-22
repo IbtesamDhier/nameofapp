@@ -8,7 +8,7 @@
         <strong><%= product.price %></strong><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
         <p class="actions" ><%= link_to 'Show', product %> <%= link_to 'Edit', edit_product_path(product) %> <%= link_to 'Destroy', product, method: :delete, data:{ confirm: 'Are you sure?' } %>
          </p>
-         <strong>rating goes here</strong>
+        <p>Average Rating: <div class="rated" data-score="<%= product.average_rating %>"></div> </p>
       </div>
     </div>
   </div>
