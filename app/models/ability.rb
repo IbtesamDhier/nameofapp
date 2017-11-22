@@ -30,6 +30,14 @@ class Ability
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
     user ||= User.new # guest user (not logged in)
     can :manage, User, id: user.id
+
+    alias_action :create, :new, :update, :destroy, to: :product_crud
+    
+    if user.admin?
+        #can :manage, :all
+        can :destroy, Comment
+        can :product_crud, Product
+    end
   end
 end
 
