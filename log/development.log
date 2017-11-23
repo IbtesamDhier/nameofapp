@@ -18263,3 +18263,110 @@ Processing by StaticPagesController#contact as HTML
 Completed 200 OK in 259ms (Views: 254.8ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-23 13:29:32 +0200
+Processing by StaticPagesController#thank_you as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6r4lUeTbuvZw4XbAof4vvx4ZdZp7y6vx8wezKIC8Kjqin28bcjzOoBRLcCk2CBmQDEQvsB2bKCJm6KJeJgUiRQ==", "name"=>"u", "email"=>"ih@gmail.com", "message"=>"y", "commit"=>"Send Us a Message"}
+  Rendering user_mailer/contact_form.html.erb within layouts/mailer
+  Rendered user_mailer/contact_form.html.erb within layouts/mailer (0.5ms)
+UserMailer#contact_form: processed outbound mail in 18.9ms
+Sent mail to ibtesam.dh2@gmail.com (1007.9ms)
+Date: Thu, 23 Nov 2017 13:29:32 +0200
+From: ih@gmail.com
+To: ibtesam.dh2@gmail.com
+Message-ID: <5a16b11c2528e_12163fd1584f07e0739ec@ibtesam-VirtualBox.mail>
+Subject: A new contact form message from u
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <table>
+  <tbody>
+    <tr>
+      <td><p>You have received a new contact form message. The contents of the message are:</p></td>
+    </tr>
+    <tr>
+      <td><p>y</p></td>
+    </tr>
+  </tbody>
+</table>
+
+  </body>
+</html>
+
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1262ms (Views: 145.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 13:29:35 +0200
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 116ms (Views: 114.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-11-23 13:35:22 +0200
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (226.4ms)
+Completed 200 OK in 1221ms (Views: 1100.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/static_pages/thank_you" for 127.0.0.1 at 2017-11-23 13:35:33 +0200
+Processing by StaticPagesController#thank_you as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"93WO+X/856W7Yrp8ODJ0OqTvR6VRNX5SgVwfi0DJzxu/VMSz6RuT89/IvJWvxEIVtrIdjzdl/YEUsw795nDHZA==", "name"=>"t", "email"=>"ih@gmail.com", "message"=>"1", "commit"=>"Send Us a Message"}
+  Rendering user_mailer/contact_form.html.erb within layouts/mailer
+  Rendered user_mailer/contact_form.html.erb within layouts/mailer (0.6ms)
+UserMailer#contact_form: processed outbound mail in 43.0ms
+Sent mail to ibtesam.dh2@gmail.com (1086.4ms)
+Date: Thu, 23 Nov 2017 13:35:33 +0200
+From: ih@gmail.com
+To: ibtesam.dh2@gmail.com
+Message-ID: <5a16b28568238_12163fd1584f07e074073@ibtesam-VirtualBox.mail>
+Subject: A new contact form message from t
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <table>
+  <tbody>
+    <tr>
+      <td><p>You have received a new contact form message. The contents of the message are:</p></td>
+    </tr>
+    <tr>
+      <td><p>1</p></td>
+    </tr>
+  </tbody>
+</table>
+
+  </body>
+</html>
+
+  Rendering static_pages/thank_you.html.erb within layouts/application
+  Rendered static_pages/thank_you.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 1396ms (Views: 234.5ms | ActiveRecord: 0.0ms)
+
+
