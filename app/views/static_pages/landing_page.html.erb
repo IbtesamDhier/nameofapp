@@ -1,20 +1,19 @@
 
-
 <section class="container" id="landing-page">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
            
             <% @products.each_with_index do |product, index| %>
-     		<li data-target="#carousel-example-generic" data-slide-to="<%= index %>" class="<%= " active" if product == @products.first %>">
-     			
-     		</li>
-			<% end %>
+            <li data-target="#carousel-example-generic" data-slide-to="<%= index %>" class="<%= " active" if product == @products.first %>">
+                
+            </li>
+            <% end %>
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-        	<% @products.each do |product| %>
+            <% @products.each do |product| %>
             <div class="item<%= " active" if product == @products.first %>">
                 <%= link_to image_tag(product.image_url), product %>
                 <div class="carousel-caption">
@@ -35,4 +34,3 @@
         </a>
     </div>
 </section>
-
