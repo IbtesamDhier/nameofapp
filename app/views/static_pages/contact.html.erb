@@ -5,31 +5,33 @@
   </div>
 
   <div class="row">
+    <div class="col-md-4"></div> 
     <div class="col-md-4 border-margin">
       <%= flash[:notice] %>
       <%= form_with(url: "/static_pages/thank_you", local: true) do |form| %>
 
         <div class="form-group">
           <%= form.label :name, class: 'form-label' %>
-          <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+          <%= form.text_field :name, class: "form-control", placeholder: "Your Name", :required => true, title: 'Please fill your name here'%>
         </div>  
 
         <div class="form-group">
           <%= form.label :email, "Email Address", class: 'form-label' %>
-          <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+          <%= form.text_field :email, class: "form-control", placeholder: "Your Email", type:"email", :required => true, title: "required (example@hotmail.com)" %>
         </div>
 
         <div class="form-group">
           <%= form.label :message, class: 'form-label' %>
-          <%= form.text_area :message, class: "form-control", placeholder: "Enter Message" %>
+          <%= form.text_area :message, class: "form-control", placeholder: "Your Message", :required => true, title: "Fill a message (required)" %>
         </div>
 
         <div class="actions">
-            <%= form.submit "Send", class: 'btn btn-primary' %>   
+            <%= form.submit "Send Us a Message", class: 'btn btn-primary col-md-4' %>   
         </div>
 
       <% end %>
     </div>
+    <div class="col-md-4"></div>
   </div>
 </section>
 

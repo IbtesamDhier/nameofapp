@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
  
   # root
-  root 'static_pages#index'
+  root 'static_pages#landing_page'
 
 
   # static_pages routes
@@ -24,7 +24,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/contact', to: 'static_pages#contact'
 
-  get 'static_pages/landing_page'
+  #get 'static_pages/landing_page'
 
   post 'static_pages/thank_you'
 
