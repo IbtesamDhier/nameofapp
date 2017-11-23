@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
  
   # root
-  root 'static_pages#index'
+  root 'static_pages#landing_page'
 
 
   # static_pages routes
