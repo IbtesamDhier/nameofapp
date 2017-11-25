@@ -34,7 +34,7 @@ class Ability
     alias_action :create, :new, :update, :destroy, to: :product_crud
     
     if user.admin?
-        #can :manage, :all
+        can :manage, :all
         can :destroy, Comment
         can :product_crud, Product
     end
