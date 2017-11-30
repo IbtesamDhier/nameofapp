@@ -1,20 +1,20 @@
 <p id="notice"><%= notice %></p>
 
 <div class="container-fluid">
+
   <div class="header">
     <h1>Our Products</h1>
   </div>
+
   <div class="row">
-    
-  <% @products.each do |product| %>
-    <%= render product %>
-  <% end %>
-</div>
+  	<% @products.each do |product| %>
+    	<%= render product %>
+  	<% end %>
+  </div>
 </div>
 
 <br>
 
-
-
-
-<%= link_to 'New Product', new_product_path %>
+<% if signed_in? && current_user.admin? %>
+    <%= link_to 'New Product', new_product_path %>
+<% end %>

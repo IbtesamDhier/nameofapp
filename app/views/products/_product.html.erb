@@ -2,13 +2,16 @@
     <div class="thumbnail">
        <a class="product-image" href="/products/<%= product.id%>"><%= image_tag product.image_url, class: "img-responsive", alt: product.description%></a>
       <div class="caption">
-        <h3><%= product.name%></h3>
+        <a href="/products/<%= product.id%>"><h3><%= product.name%></h3></a>
         <p><%= product.colour%></p>
         <p><%= product.description%></p>
         <strong><%= product.price %></strong><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
         <p>Average Rating: <div class="rated" data-score="<%= product.average_rating %>"></div> </p>
-        <p class="actions" ><%= link_to 'Show', product %> <%= link_to 'Edit', edit_product_path(product) %> <%= link_to 'Destroy', product, method: :delete, data:{ confirm: 'Are you sure?' } %>
-         </p>
+
+        <% if signed_in? && current_user.admin? %>
+          <p class="actions" ><%= link_to 'Show', product %> <%= link_to 'Edit', edit_product_path(product) %> <%= link_to 'Destroy', product, method: :delete, data:{ confirm: 'Are you sure?' } %>
+          </p>
+        <% end %>
       </div>
     </div>
 </div>
