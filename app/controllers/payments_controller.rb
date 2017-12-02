@@ -19,6 +19,7 @@ class PaymentsController < ApplicationController
         if charge.paid
            Order.create(product_id: @product.id, user_id: @user.id, total: @product.price.to_i)
            UserMailer.order_placed(@user, @product).deliver_now
+           flash[:notice] = "Thank you for purchasing our #{@product.name}"
         end
 
       rescue Stripe::CardError => e
