@@ -4,7 +4,7 @@ $(document).on('turbolinks:load', function(){
   		starOff: '<%= asset_path 'star-off.png' %>',
   		starOn: '<%= asset_path 'star-on.png' %>',
   		scoreName: 'comment[rating]'
-});
+  });
 	
 
   $('.rated').raty({
@@ -16,4 +16,8 @@ $(document).on('turbolinks:load', function(){
       return $(this).attr('data-score');
     }
   });
+
+  $('.img-zoom').elevateZoom();
+
+
 });

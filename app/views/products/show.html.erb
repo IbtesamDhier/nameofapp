@@ -3,7 +3,7 @@
 
 <div class="container show-product">
     <div class="thumbnail">
-      <%= image_tag(@product.image_url, class: "img-responsive product-img") %>
+      <%= image_tag(@product.image_url, class: "img-responsive product-img img-zoom", data_zoom_image: "@product.image_url") %>
       <div class="caption">
         <h3><%= @product.name%></h3>
         <p><%= @product.colour%></p>
