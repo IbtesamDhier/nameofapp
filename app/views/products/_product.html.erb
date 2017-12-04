@@ -1,11 +1,14 @@
-<div class="col-sm-6 col-md-4">
+<% cache product do %>
+  <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
+
        <a class="product-image" href="/products/<%= product.id%>"><%= image_tag product.image_url, class: "img-responsive", alt: product.description%></a>
-      <div class="caption">
+       <div class="caption">
         <a href="/products/<%= product.id%>"><h3><%= product.name%></h3></a>
         <p><%= product.colour%></p>
         <p><%= product.description%></p>
         <strong><%= product.price %></strong><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+      
         <p>Average Rating: <div class="rated" data-score="<%= product.average_rating %>"></div> </p>
 
         <% if signed_in? && current_user.admin? %>
@@ -14,4 +17,5 @@
         <% end %>
       </div>
     </div>
-</div>
+  </div>
+<% end %>
