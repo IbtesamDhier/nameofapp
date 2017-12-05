@@ -52,6 +52,8 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
+  #tell the rails generator to generate plain JavaScript files instead of CoffeeScript files
+  config.app_generators.javascript_engine = :javascript
 
   
 
