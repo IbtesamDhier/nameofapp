@@ -35,12 +35,4 @@ class Product < ApplicationRecord
         $redis.incr("product:#{id}") # this is equivalent to 'INC product:1'
     end
 
-    def set_latest_reviewer(user_id)
-		$redis.set("lr_product:#{id}","#{user_id}")
-	end
-
-    def get_latest_reviewer
-    	$redis.get("lr_product:#{id}") # this returns the user's first name...
-    end
-
 end
