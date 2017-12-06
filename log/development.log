@@ -24691,3 +24691,76 @@ ProductChannel transmitting {"comment"=>{"id"=>22, "user_id"=>1, "body"=>"kk", "
 Completed 200 OK in 169ms (Views: 79.6ms | ActiveRecord: 50.6ms)
 
 
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-05 19:35:47 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/products/1" for 127.0.0.1 at 2017-12-05 19:35:47 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (9.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (32.3ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (9.2ms)
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (6.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (9.8ms)
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (6.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (7.7ms)
+  Rendered products/_comments.html.erb (49.1ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  Rendered products/show.html.erb within layouts/application (156.8ms)
+Completed 200 OK in 335ms (Views: 319.5ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-12-05 19:35:49 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-05 19:35:49 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started POST "/products/1/comments" for 127.0.0.1 at 2017-12-05 19:36:02 +0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "comment"=>{"body"=>"k", "rating"=>"2"}, "commit"=>"Submit", "product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (64.5ms)[0m  [1m[32mINSERT INTO "comments" ("user_id", "body", "rating", "product_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["body", "k"], ["rating", 2], ["product_id", 1], ["created_at", "2017-12-05 17:36:02.492089"], ["updated_at", "2017-12-05 17:36:02.492089"]]
+  [1m[35m (16.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+[ActionCable] Broadcasting to product_channel: {:comment=>#<Comment id: 23, user_id: 1, body: "k", rating: 2, product_id: 1, created_at: "2017-12-05 17:36:02", updated_at: "2017-12-05 17:36:02">, :average_rating=>2.88235294117647}
+ProductChannel transmitting {"comment"=>{"id"=>23, "user_id"=>1, "body"=>"k", "rating"=>2, "product_id"=>1, "created_at"=>"2017-12-05T17:36:02.492Z", "updated_at"=>"2017-12-05T17:36:02.492Z"}, "average_rating"=>2.88235294117647} (via streamed from product_channel)
+ProductChannel transmitting {"comment"=>{"id"=>23, "user_id"=>1, "body"=>"k", "rating"=>2, "product_id"=>1, "created_at"=>"2017-12-05T17:36:02.492Z", "updated_at"=>"2017-12-05T17:36:02.492Z"}, "average_rating"=>2.88235294117647} (via streamed from product_channel)
+  Rendering comments/create.js.erb
+  Rendered comments/_comment.html.erb (9.1ms)
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  Rendered comments/create.js.erb (50.1ms)
+Completed 200 OK in 204ms (Views: 74.1ms | ActiveRecord: 83.3ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-05 19:40:50 +0200
+ProductChannel stopped streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-05 19:40:50 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-05 19:40:51 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-05 19:40:51 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable" for 127.0.0.1 at 2017-12-05 19:40:51 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-05 19:40:51 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-05 20:31:14 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-05 20:31:15 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-05 20:31:15 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
