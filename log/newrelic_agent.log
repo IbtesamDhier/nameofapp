@@ -500,3 +500,44 @@
 [2017-12-06 07:16:54 +0200 ibtesam-VirtualBox (7955)] INFO : Installing Rails 5 Action Cable instrumentation
 [2017-12-06 07:16:55 +0200 ibtesam-VirtualBox (7955)] INFO : Finished instrumentation
 [2017-12-06 07:16:59 +0200 ibtesam-VirtualBox (7955)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1817325/applications/38416594
+[2017-12-06 16:36:15 +0200 ibtesam-VirtualBox (3362)] INFO : Starting Agent shutdown
+[2017-12-07 15:31:13 +0200 ibtesam-VirtualBox (7955)] INFO : Starting Agent shutdown
+[2017-12-07 15:31:51 +0200 ibtesam-VirtualBox (14507)] INFO : Starting the New Relic agent version 4.6.0.338 in "development" environment.
+[2017-12-07 15:31:51 +0200 ibtesam-VirtualBox (14507)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-12-07 15:31:51 +0200 ibtesam-VirtualBox (14507)] INFO : Reading configuration from config/newrelic.yml (/home/ibtesam/nameofapp)
+[2017-12-07 15:31:51 +0200 ibtesam-VirtualBox (14507)] INFO : Environment: development
+[2017-12-07 15:31:51 +0200 ibtesam-VirtualBox (14507)] INFO : No known dispatcher detected.
+[2017-12-07 15:31:51 +0200 ibtesam-VirtualBox (14507)] INFO : Application: My Application (Development)
+[2017-12-07 15:31:52 +0200 ibtesam-VirtualBox (14507)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-12-07 15:31:52 +0200 ibtesam-VirtualBox (14507)] INFO : Installing Memcache instrumentation for dalli gem
+[2017-12-07 15:31:52 +0200 ibtesam-VirtualBox (14507)] INFO : Installing ActiveJob instrumentation
+[2017-12-07 15:31:52 +0200 ibtesam-VirtualBox (14507)] INFO : Installing Net instrumentation
+[2017-12-07 15:31:52 +0200 ibtesam-VirtualBox (14507)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-12-07 15:31:52 +0200 ibtesam-VirtualBox (14507)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-12-07 15:31:52 +0200 ibtesam-VirtualBox (14507)] INFO : Installing ActiveRecord 5 instrumentation
+[2017-12-07 15:31:52 +0200 ibtesam-VirtualBox (14507)] INFO : Installing Redis Instrumentation
+[2017-12-07 15:31:52 +0200 ibtesam-VirtualBox (14507)] INFO : Installing Rails 5 view instrumentation
+[2017-12-07 15:31:52 +0200 ibtesam-VirtualBox (14507)] INFO : Installing Rails 5 Controller instrumentation
+[2017-12-07 15:31:52 +0200 ibtesam-VirtualBox (14507)] INFO : Installing Rails 5 Action Cable instrumentation
+[2017-12-07 15:31:52 +0200 ibtesam-VirtualBox (14507)] INFO : Finished instrumentation
+[2017-12-07 15:31:56 +0200 ibtesam-VirtualBox (14507)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1817325/applications/38416594
+[2017-12-07 15:33:40 +0200 ibtesam-VirtualBox (14507)] INFO : Starting Agent shutdown
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Starting the New Relic agent version 4.6.0.338 in "development" environment.
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Reading configuration from config/newrelic.yml (/home/ibtesam/nameofapp)
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Environment: development
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : No known dispatcher detected.
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Application: My Application (Development)
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Installing Memcache instrumentation for dalli gem
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Installing ActiveJob instrumentation
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Installing Net instrumentation
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Installing ActiveRecord 5 instrumentation
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Installing Redis Instrumentation
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Installing Rails 5 view instrumentation
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Installing Rails 5 Controller instrumentation
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Installing Rails 5 Action Cable instrumentation
+[2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Finished instrumentation
+[2017-12-07 15:33:55 +0200 ibtesam-VirtualBox (14546)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1817325/applications/38416594
