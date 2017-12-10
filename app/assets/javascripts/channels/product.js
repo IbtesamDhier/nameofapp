@@ -9,7 +9,8 @@ App.product = App.cable.subscriptions.create("ProductChannel", {
 
   received: function(data) {
     // Called when there's incoming data on the websocket for this channel
-  
+   
+    alert("received")
     $(".alert.alert-info").show();
     $( ".alert" ).delay( 3000 ).fadeOut( 3000 );
     $('.product-reviews').prepend(data.comment);
@@ -18,6 +19,7 @@ App.product = App.cable.subscriptions.create("ProductChannel", {
   },
 
   listen_to_comments: function() {
+  	alert("test")
   	return this.perform('listen', {
       product_id: $("[data-product-id]").data("product-id")
   	});
