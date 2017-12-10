@@ -24883,3 +24883,311 @@ ProductChannel transmitting {"comment"=>{"id"=>24, "user_id"=>1, "body"=>"k", "r
 Completed 200 OK in 247ms (Views: 106.4ms | ActiveRecord: 75.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-12-07 21:54:07 +0200
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 4]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (74.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4494ms (Views: 4344.6ms | ActiveRecord: 27.2ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-12-07 21:54:14 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-07 21:54:14 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/products" for 127.0.0.1 at 2017-12-07 21:55:09 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+Products number is: 7
+  Rendering products/index.html.erb within layouts/application
+  [1m[35m (11.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT MAX("products"."updated_at") FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_product.html.erb (144.0ms)
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 2]]
+  Rendered products/_product.html.erb (7.3ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 3]]
+  Rendered products/_product.html.erb (5.8ms)
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 4]]
+  Rendered products/_product.html.erb (8.2ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 5]]
+  Rendered products/_product.html.erb (14.0ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 6]]
+  Rendered products/_product.html.erb (8.2ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 7]]
+  Rendered products/_product.html.erb (7.8ms)
+  Rendered products/index.html.erb within layouts/application (240.4ms)
+Completed 200 OK in 524ms (Views: 469.9ms | ActiveRecord: 27.5ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2017-12-07 21:55:15 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (3.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 2]]
+  Rendered shared/_stripe_checkout_button.html.erb (1.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (83.1ms)
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 2], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (60.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (11.1ms)
+  Rendered products/_comments.html.erb (96.8ms)
+  Rendered products/show.html.erb within layouts/application (324.3ms)
+Completed 200 OK in 769ms (Views: 586.7ms | ActiveRecord: 10.7ms)
+
+
+Started POST "/products/2/comments" for 127.0.0.1 at 2017-12-07 21:55:22 +0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "comment"=>{"body"=>"k", "rating"=>"3"}, "commit"=>"Submit", "product_id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (12.3ms)[0m  [1m[32mINSERT INTO "comments" ("user_id", "body", "rating", "product_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["body", "k"], ["rating", 3], ["product_id", 2], ["created_at", "2017-12-07 19:55:22.827352"], ["updated_at", "2017-12-07 19:55:22.827352"]]
+  [1m[35m (92.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 2]]
+[ActionCable] Broadcasting to product_channel: {:comment=>#<Comment id: 25, user_id: 1, body: "k", rating: 3, product_id: 2, created_at: "2017-12-07 19:55:22", updated_at: "2017-12-07 19:55:22">, :average_rating=>3.33333333333333}
+ProductChannel transmitting {"comment"=>{"id"=>25, "user_id"=>1, "body"=>"k", "rating"=>3, "product_id"=>2, "created_at"=>"2017-12-07T19:55:22.827Z", "updated_at"=>"2017-12-07T19:55:22.827Z"}, "average_rating"=>3.33333333333333} (via streamed from product_channel)
+  Rendering comments/create.js.erb
+  Rendered comments/_comment.html.erb (14.3ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 2]]
+  Rendered comments/create.js.erb (53.3ms)
+Completed 200 OK in 296ms (Views: 83.3ms | ActiveRecord: 106.7ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-07 22:27:08 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-07 22:27:09 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-07 22:27:09 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 06:36:33 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 06:36:34 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 06:36:34 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 06:36:43 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 06:36:43 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 06:36:43 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 06:40:04 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 06:40:05 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 06:40:05 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 06:44:02 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 06:44:05 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 06:44:05 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:25:54 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 07:25:57 +0200
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 07:25:57 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:26:03 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:26:03 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:27:14 +0200
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:27:14 +0200
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 07:28:08 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:28:08 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 07:36:01 +0200
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:36:01 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 07:36:01 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:36:06 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:36:06 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:36:06 +0200
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:37:21 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 07:37:24 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:37:24 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:38:08 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 07:38:11 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:38:11 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:56:33 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 07:56:34 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 07:56:34 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 08:20:44 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 08:20:45 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 08:20:45 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 08:37:36 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 08:37:37 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 08:37:37 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 09:31:12 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 09:31:13 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 09:31:16 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 11:19:19 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 11:19:20 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 11:19:20 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 11:39:27 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 11:39:29 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 11:39:29 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 15:29:57 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 15:29:58 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 15:29:58 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 15:43:17 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 15:43:18 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 15:43:18 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 21:47:57 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 21:47:58 +0200
+Started GET "/cable" for 127.0.0.1 at 2017-12-08 21:48:02 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 21:48:02 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 21:48:02 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-08 21:48:02 +0200
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 07:56:31 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-09 07:56:32 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 07:56:32 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 09:09:32 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-09 09:09:34 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 09:09:35 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 09:09:37 +0200
+Started GET "/cable" for 127.0.0.1 at 2017-12-09 09:09:37 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 09:09:37 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 09:22:41 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-09 09:22:43 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 09:22:43 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 16:31:56 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-09 16:31:57 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 16:31:57 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 16:32:54 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-09 16:32:55 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 16:32:55 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 16:56:00 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-09 16:56:00 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 16:56:00 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 17:55:02 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-09 17:55:03 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 17:55:03 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 19:00:41 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-09 19:00:42 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 19:00:42 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 19:00:51 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-09 19:00:51 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-09 19:00:51 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-10 03:40:02 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-10 03:40:03 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-10 03:40:03 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-10 03:41:13 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-10 03:41:13 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-10 03:41:13 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-10 03:41:53 +0200
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for 127.0.0.1 at 2017-12-10 03:41:54 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-10 03:41:54 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel

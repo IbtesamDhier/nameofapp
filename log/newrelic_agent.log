@@ -541,3 +541,97 @@
 [2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Installing Rails 5 Action Cable instrumentation
 [2017-12-07 15:33:49 +0200 ibtesam-VirtualBox (14546)] INFO : Finished instrumentation
 [2017-12-07 15:33:55 +0200 ibtesam-VirtualBox (14546)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1817325/applications/38416594
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : Starting the New Relic agent version 4.6.0.338 in "development" environment.
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : Reading configuration from config/newrelic.yml (/home/ibtesam/nameofapp)
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : Environment: development
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : No known dispatcher detected.
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : Application: My Application (Development)
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : Installing Memcache instrumentation for dalli gem
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : Installing ActiveJob instrumentation
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : Installing Net instrumentation
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : Installing ActiveRecord 5 instrumentation
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : Installing Redis Instrumentation
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : Installing Rails 5 view instrumentation
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : Installing Rails 5 Controller instrumentation
+[2017-12-07 21:54:03 +0200 ibtesam-VirtualBox (19215)] INFO : Installing Rails 5 Action Cable instrumentation
+[2017-12-07 21:54:04 +0200 ibtesam-VirtualBox (19215)] INFO : Finished instrumentation
+[2017-12-07 21:54:05 +0200 ibtesam-VirtualBox (19215)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-12-07 21:54:08 +0200 ibtesam-VirtualBox (19215)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1817325/applications/38416594
+[2017-12-08 11:29:40 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 11:29:43 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.001116335 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:15:12 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:15:12 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.004049465 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:16:13 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:16:13 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.001839141 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:16:13 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:16:13 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.002453213 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:16:36 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:16:36 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 21.398739749 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:17:15 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:17:15 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.001868489 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:17:15 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:17:15 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.001921875 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:17:33 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:17:33 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.433961034 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:17:53 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:17:53 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.014860712 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:18:16 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:18:16 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.001246871 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:18:16 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:18:16 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.00119656 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:18:32 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:18:32 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.014372315 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:18:52 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:18:52 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.014558628 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:19:18 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:19:18 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.001519388 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:19:18 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:19:18 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.003420859 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:19:33 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:19:33 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.010302269 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:19:54 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:19:54 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.875807846 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:20:19 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:20:19 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.001737122 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:20:19 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:20:19 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.002598556 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:20:34 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:20:34 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.009602388 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:20:56 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:20:56 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 21.343144437 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:21:20 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:21:20 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.001959859 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:21:20 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:21:20 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.001854428 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:21:34 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:21:34 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.015781954 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:21:55 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:21:55 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.896022968 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:22:21 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:22:21 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.001887496 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:22:21 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:22:21 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.003236387 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:22:37 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:22:37 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 22.346316487 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:22:57 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:22:57 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.015941836 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:23:25 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:23:25 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.001487525 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:23:25 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:23:25 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.002809023 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:23:36 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:23:36 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.602009174 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:23:56 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:23:56 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.014161391 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:24:27 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:24:27 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.001251623 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:24:27 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:24:27 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 0.001021311 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:24:37 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-12-08 15:24:37 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.017377932 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-08 15:24:57 +0200 ibtesam-VirtualBox (14546)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-08 15:24:57 +0200 ibtesam-VirtualBox (14546)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.656735844 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)

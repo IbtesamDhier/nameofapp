@@ -59,16 +59,15 @@
         </div> <!-- end nav container-->
     </nav>
 
-<!-- Flash Notice Tags -->
+    <!-- Flash Notice Tags -->
     <% if notice %>
       <div id="notice" class="alert alert-success"><%= notice %></div>
     <% end %>
     <% if alert %>
       <div id="alert" class="alert alert-danger"><%= alert %></div>
-<% end %>
+    <% end %>
     
-
-
+    
     <%= yield %>
 
     <footer class="site-footer">
