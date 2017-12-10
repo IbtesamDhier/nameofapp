@@ -688,3 +688,46 @@
 [2017-12-10 08:46:21 +0200 ibtesam-VirtualBox (869)] INFO : Starting Agent shutdown
 [2017-12-10 08:46:43 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
 [2017-12-10 08:46:43 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.018913252 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-10 08:47:03 +0200 ibtesam-VirtualBox (19215)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-12-10 08:47:03 +0200 ibtesam-VirtualBox (19215)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-192.newrelic.com:443 after 20.015593294 seconds: Failed to open TCP connection to collector-192.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Starting the New Relic agent version 4.6.0.338 in "development" environment.
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Reading configuration from config/newrelic.yml (/home/ibtesam/nameofapp)
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Environment: development
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : No known dispatcher detected.
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Application: My Application (Development)
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Installing Memcache instrumentation for dalli gem
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Installing ActiveJob instrumentation
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Installing Net instrumentation
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Installing ActiveRecord 5 instrumentation
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Installing Redis Instrumentation
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Installing Rails 5 view instrumentation
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Installing Rails 5 Controller instrumentation
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Installing Rails 5 Action Cable instrumentation
+[2017-12-10 08:47:07 +0200 ibtesam-VirtualBox (2083)] INFO : Finished instrumentation
+[2017-12-10 08:47:09 +0200 ibtesam-VirtualBox (2083)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2017-12-10 08:47:09 +0200 ibtesam-VirtualBox (2083)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error talking to collector.newrelic.com:443 after 2 attempts: Failed to open TCP connection to collector.newrelic.com:443 (getaddrinfo: Temporary failure in name resolution)
+[2017-12-10 08:47:09 +0200 ibtesam-VirtualBox (2083)] INFO : Will re-attempt in 60 seconds
+                                                                                                                                                                                                                                                                                                                                                                                                                                                              [2017-12-10 13:46:56 +0200 ibtesam-VirtualBox (2248)] INFO : Starting the New Relic agent version 4.6.0.338 in "development" environment.
+[2017-12-10 13:46:56 +0200 ibtesam-VirtualBox (2248)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-12-10 13:46:56 +0200 ibtesam-VirtualBox (2248)] INFO : Reading configuration from config/newrelic.yml (/home/ibtesam/nameofapp)
+[2017-12-10 13:46:56 +0200 ibtesam-VirtualBox (2248)] INFO : Environment: development
+[2017-12-10 13:46:56 +0200 ibtesam-VirtualBox (2248)] INFO : No known dispatcher detected.
+[2017-12-10 13:46:56 +0200 ibtesam-VirtualBox (2248)] INFO : Application: My Application (Development)
+[2017-12-10 13:46:58 +0200 ibtesam-VirtualBox (2248)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-12-10 13:46:58 +0200 ibtesam-VirtualBox (2248)] INFO : Installing Memcache instrumentation for dalli gem
+[2017-12-10 13:46:58 +0200 ibtesam-VirtualBox (2248)] INFO : Installing ActiveJob instrumentation
+[2017-12-10 13:46:58 +0200 ibtesam-VirtualBox (2248)] INFO : Installing Net instrumentation
+[2017-12-10 13:46:58 +0200 ibtesam-VirtualBox (2248)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-12-10 13:46:58 +0200 ibtesam-VirtualBox (2248)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-12-10 13:46:58 +0200 ibtesam-VirtualBox (2248)] INFO : Installing ActiveRecord 5 instrumentation
+[2017-12-10 13:46:58 +0200 ibtesam-VirtualBox (2248)] INFO : Installing Redis Instrumentation
+[2017-12-10 13:46:58 +0200 ibtesam-VirtualBox (2248)] INFO : Installing Rails 5 view instrumentation
+[2017-12-10 13:46:58 +0200 ibtesam-VirtualBox (2248)] INFO : Installing Rails 5 Controller instrumentation
+[2017-12-10 13:46:58 +0200 ibtesam-VirtualBox (2248)] INFO : Installing Rails 5 Action Cable instrumentation
+[2017-12-10 13:46:58 +0200 ibtesam-VirtualBox (2248)] INFO : Finished instrumentation
+[2017-12-10 13:47:06 +0200 ibtesam-VirtualBox (2248)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-12-10 13:47:06 +0200 ibtesam-VirtualBox (2248)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1817325/applications/38416594
