@@ -2,7 +2,7 @@
  
 
 <div class="container show-product">
-    <div class="thumbnail">
+    <div class="thumbnail" data-product-id="<%= @product.id %>">
       <% cache @product do %>
 
       <%= image_tag(@product.image_url, class: "img-responsive product-img img-zoom", data_zoom_image: "@product.image_url") %>
