@@ -28103,3 +28103,23 @@ Completed 200 OK in 631ms (Views: 206.9ms | ActiveRecord: 189.9ms)
 [ActiveJob] [CommentUpdateJob] [25fc1ca6-f8ae-4357-90d3-440bdd906fd3] [ActionCable] Broadcasting to product:7: {:comment=>"<div class=\"row\">\n  <hr>\n  <p>\n      <small><em>less than a minute ago</em></small>\n    \n      <a data-confirm=\"Are you sure?\" rel=\"nofollow\" data-method=\"delete\" href=\"/products/7/comments/50\"><span class=\"glyphicon glyphicon-remove\"></span></a>\n  </p>\n  <div class=\"rated\" data-score=\"2\"></div>\n  <p>l</p>\n</div>", :average_rating=>2.5}
 ProductChannel transmitting {"comment"=>"<div class=\"row\">\n  <hr>\n  <p>\n      <small><em>less than a minute ago</em></small>\n    \n      <a data-confirm=\"Are you sure?\" rel=\"nofollow\" data-method=\"delete\" href=\"/products/7/comments/50\"><span class=\"glyphicon glyphicon-remove\"></span></a>\n  </p>\n  <div clas... (via streamed from product:7)
 [ActiveJob] [CommentUpdateJob] [25fc1ca6-f8ae-4357-90d3-440bdd906fd3] Performed CommentUpdateJob (Job ID: 25fc1ca6-f8ae-4357-90d3-440bdd906fd3) from Async(default) in 99.21ms
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-10 20:07:35 +0200
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-10 20:07:41 +0200
+Started GET "/cable" for 127.0.0.1 at 2017-12-10 20:07:42 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-10 20:07:42 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable" for 127.0.0.1 at 2017-12-10 20:07:42 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-10 20:07:42 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-10 20:18:13 +0200
+Started GET "/cable" for 127.0.0.1 at 2017-12-10 20:18:14 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-10 20:18:14 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-10 20:22:05 +0200
+Started GET "/cable" for 127.0.0.1 at 2017-12-10 20:22:07 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-10 20:22:07 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation

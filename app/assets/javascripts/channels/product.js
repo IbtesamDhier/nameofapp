@@ -1,6 +1,7 @@
 App.product = App.cable.subscriptions.create("ProductChannel", {
   connected: function() {
     // Called when the subscription is ready for use on the server
+  alert("conected")
   },
 
   disconnected: function() {
@@ -19,7 +20,7 @@ App.product = App.cable.subscriptions.create("ProductChannel", {
   },
 
   listen_to_comments: function() {
-  	alert("test")
+  	alert("listen")
   	return this.perform('listen', {
       product_id: $("[data-product-id]").data("product-id")
   	});
