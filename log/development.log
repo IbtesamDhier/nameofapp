@@ -28939,3 +28939,9 @@ ProductChannel transmitting {"comment"=>"<div class=\"row\">\n  <hr>\n  <p>\n   
 Completed 200 OK in 757ms (Views: 178.0ms | ActiveRecord: 493.5ms)
 
 
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-11 16:58:58 +0200
+ProductChannel stopped streaming from product:4
+Started GET "/cable" for 127.0.0.1 at 2017-12-11 16:58:59 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-11 16:58:59 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
