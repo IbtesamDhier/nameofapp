@@ -1,17 +1,17 @@
 
-<div class="container show-product">
+<section class="container show-product">
   <div class="row" data-product-id="<%= @product.id %>">
     <% cache @product do %>
 
-    <div class="col-md-6 col-xs-12 product-image">
+    <div class="col-sm-6 col-xs-12 product-image">
       <%= image_tag(@product.image_url, class: "img-responsive product-img img-zoom", data_zoom_image: "@product.image_url") %>
     </div>
-    <div class="col-md-6 col-xs-12 product-details">
-      <h6 class="views-number">  
+    <div class="col-sm-6 col-xs-12 product-details">
+      <div class="caption">
+        <h6 class="views-number">  
          Views:
          <span class="badge"><%= @product.views %></span>
-      </h6>
-      <div class="caption">
+        </h6>
         <h3><%= @product.name%></h3>
         <p><%= @product.colour%></p>
         <p><%= @product.description%></p>
@@ -28,11 +28,11 @@
           <p class="actions" ><%= link_to 'Edit', edit_product_path(@product) %>
           </p>
         <% end %>
+        <%= render 'new_comment' %>
+        <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+        <%= render 'comments' %>
+        <%= will_paginate @comments %>
       </div>
-      <%= render 'new_comment' %>
-      <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
-      <%= render 'comments' %>
-      <%= will_paginate @comments %>
     </div>
   </div>
-</div>
+</section>

@@ -163,10 +163,17 @@
         bottom: 35%;
     }
 
-  .carousel-inner > .item > a > img {
-      height: 300px;
-  }
+    .carousel-inner > .item > a > img {
+        height: 300px;
+    }
 
-}    
+}  
+
+@media (min-width: 768px) {
+    .product-details .caption{
+        text-align: left;
+    }
+
+}  
 
 
