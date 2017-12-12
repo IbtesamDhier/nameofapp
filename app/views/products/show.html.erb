@@ -13,10 +13,10 @@
          <span class="badge"><%= @product.views %></span>
         </h6>
         <h3><%= @product.name%></h3>
-        <p><%= @product.colour%></p>
         <p><%= @product.description%></p>
-        <strong><%= @product.price %></strong><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
-        <p>Average Rating: <div id="average-rating" class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+        <p><span>Colour:</span> <%= @product.colour%></p>
+        <p><span>Price:</span> <%= @product.price %> <span class="glyphicon glyphicon-usd" aria-hidden="true"></span></p>
+        <div id="average-rating" class="rated" data-score="<%= @product.average_rating %>"></div>
         <% end %>
 
         <%= form_with(url: '/payments/create', remote: true) do |form| %>
