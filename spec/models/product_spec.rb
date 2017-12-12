@@ -3,23 +3,42 @@ require 'rails_helper'
 describe Product do
 
   context "when the product has comments" do
-    let(:product) { Product.create!(name: "Bag") }
-    let(:user) { User.create!(first_name: "Ibtesam", last_name:"Dheir",email: "ig@gmail.com", password: "123456") }
-    before do
-  		product.comments.create!(rating: 1, user: user, body: "Awful bag!")
-  		product.comments.create!(rating: 3, user: user, body: "Ok bag!")
-  		product.comments.create!(rating: 5, user: user, body: "Great bag!")
-  	end
+    let(:user1) {FactoryBot.build(:user)}
+    let(:user2) {FactoryBot.build(:user)}
+    let(:user3) {FactoryBot.build(:user)}
+    let(:product) { FactoryBot.build(:product) }
 
-  	it "returns the average rating of all comments" do
+     before do
+  		product.comments << FactoryBot.create(:comment, rating: 1, user: user1, product: product)
+      product.comments << FactoryBot.create(:comment, rating: 3, user: user2, product: product)
+      product.comments << FactoryBot.create(:comment, rating: 5, user: user3, product: product)
+     end
+
+  	it "it returns the average rating of all comments" do
   		expect(product.average_rating).to eq 3
-	end
+	  end
 
-	it "is not valid without a name" do
-		expect(Product.new(description: "Nice bag")).not_to be_valid
-	end
-	
+    it "it returns the highest rating of all comments" do
+      expect(product.highest_rating_comment.rating).to eq 5
+    end
 
+    it "it returns the lowest rating of all comments" do
+      expect(product.lowest_rating_comment.rating).to eq 1
+    end
+
+    context "product validation" do
+
+      it "product is valid" do
+        expect(FactoryBot.build(:product)).to be_valid
+      end
+
+	    it "it is not valid without a name" do
+		    expect(FactoryBot.build(:product, name: nil)).not_to be_valid
+	    end
+
+      it "it is not valid without a price" do
+        expect(FactoryBot.build(:product, price: nil)).not_to be_valid
+      end
+    end
   end
-
 end
