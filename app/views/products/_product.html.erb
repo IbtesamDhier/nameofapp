@@ -11,7 +11,7 @@
       
         <p>Average Rating: <div class="rated" data-score="<%= product.average_rating %>"></div> </p>
 
-        <% if signed_in? && current_user.admin? %>
+        <% if current_user && current_user.admin? %>
           <p class="actions" ><%= link_to 'Show', product %> <%= link_to 'Edit', edit_product_path(product) %> <%= link_to 'Destroy', product, method: :delete, data:{ confirm: 'Are you sure?' } %>
           </p>
         <% end %>
