@@ -29169,3 +29169,8 @@ Started GET "/cable" for 127.0.0.1 at 2017-12-12 13:20:18 +0200
 Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-12 13:20:18 +0200
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
 ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-12 13:43:57 +0200
+Started GET "/cable" for 127.0.0.1 at 2017-12-12 13:43:58 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-12 13:43:58 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation

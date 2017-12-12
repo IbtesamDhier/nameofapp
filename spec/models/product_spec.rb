@@ -26,6 +26,7 @@ describe Product do
       expect(product.lowest_rating_comment.rating).to eq 1
     end
 
+#============= Validation test =================
     context "product validation" do
 
       it "product is valid" do
@@ -35,10 +36,6 @@ describe Product do
 	    it "it is not valid without a name" do
 		    expect(FactoryBot.build(:product, name: nil)).not_to be_valid
 	    end
-
-      it "it is not valid without a price" do
-        expect(FactoryBot.build(:product, price: nil)).not_to be_valid
-      end
     end
   end
 end
