@@ -2,7 +2,7 @@
   <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
     
     <div class="form-group">
-    <%= f.label :body, "we'll be happy if you leave a comment ", class: 'form-label' %>
+    <%= f.label :body, "we'll be happy if you left a comment ", class: 'form-label' %>
     <%= f.text_area :body, class: 'form-control', :required => true, title: "Leave your comments(required)" %>
   </div>
     
