@@ -8,17 +8,14 @@ Rails.application.routes.draw do
 
   resources :users
 
-resources :products do
-    resources :orders
-  end
-  #resources :orders, only: [:index, :show, :create, :destroy]
+  resources :orders, only: [:index, :show, :create, :destroy]
 
  
-  #==================== root ==================
+  # root
   root 'static_pages#landing_page'
 
 
-  #================static_pages routes==========
+  # static_pages routes
   get 'static_pages/', to: 'static_pages#index' 
 
   get 'static_pages/index'
@@ -31,12 +28,7 @@ resources :products do
 
   post 'static_pages/thank_you'
 
-  #===============other routes =================
-
   post 'payments/create'
-
-  get 'orders/index'
-
 
   mount ActionCable.server => '/cable'
 
