@@ -3,7 +3,23 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .add-review {
-	text-align: center;
+	text-align: left;
 	color: #ce6a3c;
 	text-transform: uppercase;
+	font-wight: bold;
+}
+
+.pagination a, 
+.pagination span {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ac7755;
+    color: #fff;
+}
+
+.pagination .current {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ce6a3c;
+    color: #fff;
 }

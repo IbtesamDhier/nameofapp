@@ -42,12 +42,14 @@
 
 .btn-primary:hover,
 .btn-primary:active,
-.btn-primary:active:focus {
+.btn-primary:active:focus
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover {
     background-color: #ce6a3c;
     border-color: #ce6a3c;
 }
-
-
 
 
 /*site footer*/

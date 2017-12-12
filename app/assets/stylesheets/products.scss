@@ -6,13 +6,15 @@
 body {
 	margin: 0;
 }
+.product-details .caption,
 .thumbnail .caption {
 	text-align: center;
 	color: #6f463d;
-
+	font-weight: bold;
 }
 
-.thumbnail .product-img {
+.product-details .product-img,
+.thumbnail .product-img  {
 	height: 330px;
 }
 
