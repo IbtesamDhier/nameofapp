@@ -1,6 +1,8 @@
 class CommentsController < ApplicationController
   before_action :set_comment, only: %i[show destroy]
   before_action :authenticate_user!
+  load_and_authorize_resource 
+
 
   def create
     @product = Product.find(params[:product_id])
