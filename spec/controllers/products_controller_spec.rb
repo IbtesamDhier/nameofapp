@@ -13,104 +13,106 @@ describe ProductsController, type: :controller do
  end
 
  #================== show action ===================#
- context "GET #show" do
+context "GET #show" do
   let(:product) {FactoryBot.create(:product)}
    it "load current product details" do
     get :show, params: { id: product.id } 
     expect(response).to be_ok
     expect(response).to render_template ('show')
    end
- end
+end
 
  #================== new action ===================#
- describe "GET #new" do
-  let(:admin) {FactoryBot.create(:admin)}
-  let(:user) {FactoryBot.create(:user)}
-
+describe "GET #new" do
+  subject { get :new }
   context "when user is logged in" do
+    before { sign_in user}
+    context "when it is an admin" do
+      let(:user) { FactoryBot.create(:admin) }
+      it "renders the new Product template" do
+        expect(subject).to render_template ('new')
+      end
+    end
 
-    it "renders the new Product template if he's an admin" do
-    sign_in admin
-    get :new
-    expect(response).to render_template ('new')
-   end
-
-   it "redirect to root if he's not admin" do
-    sign_in user
-    get :new
-    expect(response).to redirect_to (root_path)
-   end
+    context 'when it is a normal user' do
+      let(:user) {FactoryBot.create(:user)}
+      it "redirect to root" do
+        expect(subject).to redirect_to (root_path)
+      end
+    end
   end
 
   context "when user is not logged in" do
     it "redirect to login template" do
-    get :new
-    expect(response).to redirect_to (new_user_session_path)
+    expect(subject).to redirect_to (new_user_session_path)
    end
   end
- end
+end
 
  #================== edit action ===================#
- describe "GET #edit" do
-  let(:product) {FactoryBot.create(:product)}
-  let(:admin) {FactoryBot.create(:admin)}
-  let(:user) {FactoryBot.create(:user)}
+describe "GET #edit" do
+  let(:product) { FactoryBot.create(:product) }
+  subject {
+    get :edit, params: { id: product.id } 
+  }
 
   context "when user is logged in" do
-    it "renders the edit Product template if he's an admin" do
-      sign_in admin
-      get :edit, params: { id: product.id } 
-      expect(response).to be_ok
-      expect(response).to render_template ('edit')
-   end
+    before { sign_in user }
+    context "when he is an admin" do
+      let(:user) { FactoryBot.create(:admin) }
+      it "renders the edit Product template" do
+        expect(subject).to be_ok
+        expect(subject).to render_template ('edit')
+      end
+    end
 
-   it "redirect to root if he's not admin" do
-    sign_in user
-    get :edit, params: { id: product.id } 
-    expect(response).to redirect_to (root_path)
-   end
+    context "when he is a normal user" do 
+      let(:user) { FactoryBot.create(:user) }
+      it "redirect to root" do
+        expect(subject).to redirect_to (root_path)
+      end
+    end
   end
 
   context "when user is not logged in" do
     it "redirect to login template" do
-    get :edit, params: { id: product.id } 
-    expect(response).to redirect_to (new_user_session_path)
-   end
+      expect(subject).to redirect_to (new_user_session_path)
+    end
   end
-
- end
+end
 
  #================== create action ===================#
- describe "POST #create" do
-  
+describe "POST #create" do
+  subject {
+    post :create, params: { product: { name: 'product #1', description: '', image_url: '' ,price: 500, colour: ''}       } 
+  }
   context "when user is logged in" do
-    before do
-      @admin = FactoryBot.create(:admin)
-      @user = FactoryBot.create(:user)
+    before { sign_in user}
+    context "when he is an admin" do
+      let(:user) { FactoryBot.create(:admin) }
+      it "redirect to Product page " do
+        expect(subject).to redirect_to product_path(Product.last.id)
+      end
     end
-
-
-    it "redirect to Product page if he's an admin" do
-      sign_in @admin
-      post :create, params: { product: { name: 'product #1', description: '', image_url: '' ,price: 500, colour: ''}       } 
-      expect(response).to redirect_to product_path(Product.last.id)
+    context "when he is a normal user" do
+      let(:user) { FactoryBot.create(:user) }
+      it "redirect to root " do
+        expect(subject).to redirect_to (root_path)
+      end
     end
-    it "redirect to root if he's not admin" do
-      sign_in @user
-      post :create, params: { product: { name: 'product #1', description: '', image_url: '' ,price: 500, colour: ''}       } 
-      expect(response).to redirect_to (root_path)
-   end
   end
   context "when user is not logged in" do
     it "redirect to login template" do
-    post :create, params: { product: { name: 'product #1', description: '', image_url: '' ,price: 500, colour: ''}       } 
-    expect(response).to redirect_to (new_user_session_path)
-   end
+      expect(subject).to redirect_to (new_user_session_path)
+    end
   end
- end
+end
 
  #================== update action ===================#
  describe "PUT #update" do
+  subject {
+    put :update, params: { id: @product.id, product: { name: 'product #1', description: '', image_url: '' ,price: 500, colour: ''}       } 
+  }
   
   context "when user is logged in" do
     before do
@@ -121,13 +123,11 @@ describe ProductsController, type: :controller do
 
     it "redirect to Products page if he's an admin" do
       sign_in @admin
-      put :update, params: { id: @product.id, product: { name: 'product #1', description: '', image_url: '' ,price: 500, colour: ''}       } 
-      expect(response).to redirect_to product_path(@product.id)
+      expect(subject).to redirect_to product_path(@product.id)
     end
     it "redirect to root if he's not admin" do
       sign_in @user
-      put :update, params: { id: @product.id, product: { name: 'product #1', description: '', image_url: '' ,price: 500, colour: ''}       } 
-      expect(response).to redirect_to (root_path)
+      expect(subject).to redirect_to (root_path)
    end
   end
 
@@ -136,8 +136,7 @@ describe ProductsController, type: :controller do
       @product =FactoryBot.create(:product)
     end
     it "redirect to login template" do
-    put :update, params: { id: @product.id, product: { name: 'product #1', description: '', image_url: '' ,price: 500, colour: ''}       } 
-    expect(response).to redirect_to (new_user_session_path)
+    expect(subject).to redirect_to (new_user_session_path)
    end
   end
  end
