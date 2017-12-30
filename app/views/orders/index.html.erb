@@ -1,0 +1,21 @@
+<section class="container">
+
+  <div class="header">
+    <h1>Orders</h1>
+  </div>
+
+  <div class="row">
+  <% @orders.each do |order| %>
+    <div class="col-sm-3 col-md-4">
+      <div class="order-box">
+        <h5>
+          Order # <%= order.id %>:
+          <%= link_to order.product.name, order.product %>
+        </h5>
+        <p><%= order.product.description %></p>
+        <strong>Price: $ <%= order.product.price %></strong>
+      </div>
+    </div><!-- /col -->
+  <% end %>
+</div>
+</section>
