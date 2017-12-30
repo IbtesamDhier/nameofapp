@@ -1,0 +1,432 @@
+/* line 5, /home/ibtesam/nameofapp/app/assets/stylesheets/comments.scss */
+.add-review {
+  color: #ce6a3c;
+  text-transform: uppercase;
+  font-wight: bold;
+}
+
+/* line 11, /home/ibtesam/nameofapp/app/assets/stylesheets/comments.scss */
+.pagination a,
+.pagination span {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ac7755;
+  color: #fff;
+}
+
+/* line 19, /home/ibtesam/nameofapp/app/assets/stylesheets/comments.scss */
+.pagination .current {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ce6a3c;
+  color: #fff;
+}
+
+/* line 26, /home/ibtesam/nameofapp/app/assets/stylesheets/comments.scss */
+.new_comment {
+  margin-top: 20px;
+}
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/raty.eot");
+  src: url("./fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/raty.svg#raty") format("svg");
+  src: url("./fonts/raty.ttf") format("truetype");
+  src: url("./fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 6, /home/ibtesam/nameofapp/app/assets/stylesheets/products.scss */
+body {
+  margin: 0;
+}
+
+/* line 9, /home/ibtesam/nameofapp/app/assets/stylesheets/products.scss */
+.product-details .caption,
+.thumbnail .caption {
+  text-align: center;
+  color: #6f463d;
+  font-weight: bold;
+}
+
+/* line 16, /home/ibtesam/nameofapp/app/assets/stylesheets/products.scss */
+.product-details .product-img,
+.thumbnail .product-img {
+  height: 330px;
+}
+
+/* line 21, /home/ibtesam/nameofapp/app/assets/stylesheets/products.scss */
+.product-details .caption p > span {
+  color: #ce6a3c;
+}
+
+/* line 25, /home/ibtesam/nameofapp/app/assets/stylesheets/products.scss */
+#average-rating {
+  margin-bottom: 15px;
+}
+
+/* line 29, /home/ibtesam/nameofapp/app/assets/stylesheets/products.scss */
+.show-product {
+  margin: 80px auto;
+}
+
+/* line 33, /home/ibtesam/nameofapp/app/assets/stylesheets/products.scss */
+.show-product .product-img {
+  height: auto;
+}
+
+/* line 37, /home/ibtesam/nameofapp/app/assets/stylesheets/products.scss */
+.form-label {
+  color: #ac7755;
+  font-size: 1em;
+}
+
+/* line 42, /home/ibtesam/nameofapp/app/assets/stylesheets/products.scss */
+.alert {
+  margin-top: 51px;
+  margin-bottom: 0;
+}
+/* line 1, /home/ibtesam/nameofapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  /*margin: 33px;*/
+  font-family: PT Serif , sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /home/ibtesam/nameofapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: PT Serif , sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /home/ibtesam/nameofapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /home/ibtesam/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /home/ibtesam/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /home/ibtesam/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #000;
+  background-color: transperent;
+}
+
+/* line 35, /home/ibtesam/nameofapp/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /home/ibtesam/nameofapp/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /home/ibtesam/nameofapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+/* line 50, /home/ibtesam/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 54, /home/ibtesam/nameofapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 60, /home/ibtesam/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 67, /home/ibtesam/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 77, /home/ibtesam/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 83, /home/ibtesam/nameofapp/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 5, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.header {
+  font-family: Spirax, sans-serif;
+  color: #c55f1f;
+  text-align: center;
+  padding: 40px 0  20px;
+}
+
+/* line 12, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar {
+  margin-bottom: 0;
+}
+
+/* line 16, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-brand {
+  color: #ac7755;
+  font-family: Spirax  , sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* line 23, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #ac7755;
+  font-family: Itim , sans-serif;
+  font-size: 17px;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+/* line 31, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-brand:hover {
+  color: #ce6a3c;
+}
+
+/* line 37, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.btn-primary {
+  background-color: #ac7755;
+  border-color: #ac7755;
+  color: #fff;
+}
+
+/* line 43, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:active:focus
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover {
+  background-color: #ce6a3c;
+  border-color: #ce6a3c;
+}
+
+/*site footer*/
+/* line 57, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.site-footer {
+  color: #730E15;
+  background-color: #e7e7e7;
+  padding: 20px 15px;
+}
+
+/* line 63, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.site-footer .fa {
+  font-size: 1.5em;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+/* line 70, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.site-footer .fa:hover {
+  color: #730e15b3;
+}
+
+/* line 75, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+#home {
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 82, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+#contact,
+#about {
+  text-align: center;
+  background-color: antiquewhite;
+  padding: 15px 0;
+}
+
+/* Thumbnail */
+/* line 92, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.thumbnail .caption h3 {
+  font-family: Itim;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* line 99, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.thumbnail a > img,
+.thumbnail > img {
+  height: 250px;
+  min-width: 100%;
+}
+
+/* Carousel */
+/*
+.carousel {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+*/
+/* line 114, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  bottom: 33%;
+  background-color: rgba(155, 159, 168, 0.41);
+  width: 41%;
+  margin: 0 auto;
+}
+
+/* line 122, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-caption h3 {
+  font-family: 'Tangerine', serif;
+  font-size: 3.5em;
+  color: #000;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+/* line 130, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators .active {
+  background-color: #730E15;
+}
+
+/* line 134, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators li {
+  border-color: #730E15;
+  border-radius: 0;
+}
+
+/* line 139, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-inner > .item > a > img {
+  width: 100%;
+  height: 700px;
+}
+
+/* Thank you */
+/* line 145, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+.panel {
+  margin-top: 60px;
+  text-align: center;
+  background-color: antiquewhite;
+  color: #730E15;
+}
+
+/*@media*/
+@media (max-width: 480px) {
+  /* line 155, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+  .carousel-caption h3 {
+    font-size: 2em;
+  }
+
+  /* line 159, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+  .carousel-caption {
+    width: 50%;
+    padding-bottom: 0;
+    padding-top: 0;
+    bottom: 35%;
+  }
+
+  /* line 166, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+  .carousel-inner > .item > a > img {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 173, /home/ibtesam/nameofapp/app/assets/stylesheets/static_pages.scss */
+  .product-details .caption {
+    text-align: left;
+  }
+}
+/* line 5, /home/ibtesam/nameofapp/app/assets/stylesheets/users.scss */
+.border-margin {
+  border: 1px solid #e7e7e7;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+/* line 11, /home/ibtesam/nameofapp/app/assets/stylesheets/users.scss */
+.order-box {
+  border: 1px solid brown;
+  padding: 5px;
+  border-radius: 5px;
+  min-height: 130px;
+  margin-bottom: 20px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
