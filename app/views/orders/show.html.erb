@@ -1,0 +1,17 @@
+<section class="container">
+
+  <div class="header">
+    <h1>Order Details</h1>
+  </div>
+
+  
+      <div class="order-box">
+        <h5>
+          Order # <%= @order.id %>:
+          <%= link_to @order.product.name, @order.product %>
+        </h5>
+        <p><%= @order.product.description %></p>
+        <strong>Price: $ <%= @order.product.price %></strong>
+      </div>
+  
+</section>

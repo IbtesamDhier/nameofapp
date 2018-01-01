@@ -1,11 +1,13 @@
 class OrdersController < ApplicationController
 
   before_action :authenticate_user!
+
   def index
-    @orders = Order.includes(:product).all
+    @orders = Order.includes(:product, :user).where(user_id: current_user.id).all
   end
 
   def show
+    @order = Order.find(params[:id])
   end
 
   def new
@@ -13,15 +15,21 @@ class OrdersController < ApplicationController
   end
 
   def create
-    @order = Order.new(order_params)
-    @order.user_id = current_user.id
-    @order.save
+    @product = Product.find(params[:product_id])
+    @order = @product.orders.build(product: @product)
+    @order.user = current_user
+    @order.total = @product.price
+    if @order.save
+      redirect_to order_path(@order)
+    else
+      flash[:error] = "something went wrong"
+    end
   end
 
   def destroy
   end
 
   def order_params
-    params.require(:order).permit(:product_id, :total)
+    params.require(:order).permit(:user_id, :total)
   end
 end

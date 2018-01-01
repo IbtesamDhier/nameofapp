@@ -23,6 +23,7 @@
            <%= hidden_field_tag(:product_id, @product.id) %>
           <%= render partial: "shared/stripe_checkout_button" %>
         <% end %>
+        <%= button_to 'Order Now', orders_path(product_id: @product.id, total: @product.price), class: 'btn btn-info' %>
 
         <% if signed_in? && current_user.admin? %>
           <p class="actions" ><%= link_to 'Edit', edit_product_path(@product) %>

@@ -35591,3 +35591,260 @@ Completed 200 OK in 222ms (Views: 94.2ms | ActiveRecord: 75.2ms)
 
 ProductChannel transmitting {"comment"=>"<div class=\"row\">\n  <hr>\n  <p>\n      <small><em>less than a minute ago</em></small>\n    \n      <a data-confirm=\"Are you sure?\" rel=\"nofollow\" data-method=\"delete\" href=\"/products/6/comments/8\"><span class=\"glyphicon glyphicon-remove\"></span></a>\n  </p>\n  <div class... (via streamed from product:6)
 [ActiveJob] [CommentUpdateJob] [a5d85b9b-0620-4050-92c1-21f008683ff7] Performed CommentUpdateJob (Job ID: a5d85b9b-0620-4050-92c1-21f008683ff7) from Async(default) in 104.44ms
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-30 19:30:16 +0200
+ProductChannel stopped streaming from product:6
+Started GET "/cable" for 127.0.0.1 at 2017-12-30 19:30:17 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-30 19:30:17 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-31 19:45:32 +0200
+Started GET "/cable" for 127.0.0.1 at 2017-12-31 19:45:32 +0200
+Started GET "/cable" for 127.0.0.1 at 2017-12-31 19:45:32 +0200
+Started GET "/cable" for 127.0.0.1 at 2017-12-31 19:45:41 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-31 19:45:48 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-31 19:45:48 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-31 19:45:48 +0200
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-31 19:45:48 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-12-31 19:45:48 +0200
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 16:27:42 +0200
+Started GET "/cable" for 127.0.0.1 at 2018-01-01 16:27:44 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 16:27:44 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 16:32:26 +0200
+Started GET "/cable" for 127.0.0.1 at 2018-01-01 16:32:27 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 16:32:27 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:15:13 +0200
+Started GET "/products/6" for 127.0.0.1 at 2018-01-01 17:15:13 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (50.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 6]]
+  Rendered shared/_stripe_checkout_button.html.erb (61.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (104.3ms)
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 6], ["LIMIT", 2], ["OFFSET", 0]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (423.8ms)
+  Rendered products/_comments.html.erb (568.2ms)
+  Rendered products/show.html.erb within layouts/application (1078.2ms)
+Completed 200 OK in 4210ms (Views: 3460.3ms | ActiveRecord: 212.4ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-01-01 17:15:24 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:15:24 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:15:48 +0200
+Started POST "/orders?product_id=6&total=20.0" for 127.0.0.1 at 2018-01-01 17:15:48 +0200
+Processing by OrdersController#create as HTML
+  Parameters: {"authenticity_token"=>"NhQkZ8BcscDnGA/MLuCmupOiZzjjsT5PCOFEHt7qykaVbzyEX1IuV499iIdbzHxrl+I6Atq+fcJEWd2hyPlP4A==", "product_id"=>"6", "total"=>"20.0"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (304.0ms)[0m  [1m[32mINSERT INTO "orders" ("user_id", "product_id", "total") VALUES (?, ?, ?)[0m  [["user_id", 1], ["product_id", 6], ["total", 20.0]]
+  [1m[35m (14.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/orders/3
+Completed 302 Found in 511ms (ActiveRecord: 326.0ms)
+
+
+Started GET "/orders/3" for 127.0.0.1 at 2018-01-01 17:15:50 +0200
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Load (19.6ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 260ms (Views: 208.2ms | ActiveRecord: 26.7ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-01-01 17:15:52 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:15:52 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:16:13 +0200
+Started GET "/products/6" for 127.0.0.1 at 2018-01-01 17:16:13 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 6]]
+  Rendered shared/_stripe_checkout_button.html.erb (30.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (1.9ms)
+  [1m[36mComment Load (7.7ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 6], ["LIMIT", 2], ["OFFSET", 0]]
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (13.3ms)
+  Rendered products/_comments.html.erb (26.4ms)
+  Rendered products/show.html.erb within layouts/application (122.1ms)
+Completed 200 OK in 267ms (Views: 239.1ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-01-01 17:16:18 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:16:18 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:16:28 +0200
+Started GET "/orders" for 127.0.0.1 at 2018-01-01 17:16:28 +0200
+Processing by OrdersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" IN (1, 2, 6)[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1[0m
+  Rendered orders/index.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 263ms (Views: 247.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-01-01 17:16:34 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:16:34 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products" for 127.0.0.1 at 2018-01-01 17:16:45 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+Products number is: 6
+  Rendering products/index.html.erb within layouts/application
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_product.html.erb (18.1ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 2]]
+  Rendered products/_product.html.erb (6.8ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 3]]
+  Rendered products/_product.html.erb (5.9ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 4]]
+  Rendered products/_product.html.erb (9.9ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 5]]
+  Rendered products/_product.html.erb (7.2ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 6]]
+  Rendered products/_product.html.erb (5.4ms)
+  Rendered products/index.html.erb within layouts/application (89.7ms)
+Completed 200 OK in 301ms (Views: 214.4ms | ActiveRecord: 9.4ms)
+
+
+ProductChannel#listen
+ProductChannel is streaming from product:
+Started GET "/products/5" for 127.0.0.1 at 2018-01-01 17:16:51 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 5]]
+  Rendered shared/_stripe_checkout_button.html.erb (47.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (13.0ms)
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 5], ["LIMIT", 2], ["OFFSET", 0]]
+  Rendered products/_comments.html.erb (12.3ms)
+  Rendered products/show.html.erb within layouts/application (239.1ms)
+Completed 200 OK in 618ms (Views: 592.7ms | ActiveRecord: 2.9ms)
+
+
+ProductChannel#listen({"product_id"=>5})
+ProductChannel stopped streaming from product:
+ProductChannel is streaming from product:5
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:16:56 +0200
+ProductChannel stopped streaming from product:5
+Started POST "/orders?product_id=5&total=35.0" for 127.0.0.1 at 2018-01-01 17:16:57 +0200
+Processing by OrdersController#create as HTML
+  Parameters: {"authenticity_token"=>"7awG6mLWemI95P8y3Kf4EficZkvRqg7wZXvcBt4e+wRrhdkAo2sldUjWELBuyTS6T3vhGwi7PVGavpj806i/4A==", "product_id"=>"5", "total"=>"35.0"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.2ms)[0m  [1m[32mINSERT INTO "orders" ("user_id", "product_id", "total") VALUES (?, ?, ?)[0m  [["user_id", 1], ["product_id", 5], ["total", 35.0]]
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/orders/4
+Completed 302 Found in 56ms (ActiveRecord: 20.3ms)
+
+
+Started GET "/orders/4" for 127.0.0.1 at 2018-01-01 17:16:57 +0200
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Load (11.8ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 413ms (Views: 378.5ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-01-01 17:17:01 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:17:01 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:17:06 +0200
+Started GET "/orders/" for 127.0.0.1 at 2018-01-01 17:17:07 +0200
+Processing by OrdersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" IN (1, 2, 6, 5)[0m
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1[0m
+  Rendered orders/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 221ms (Views: 206.8ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-01-01 17:17:11 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:17:11 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:17:51 +0200
+Started GET "/cable" for 127.0.0.1 at 2018-01-01 17:18:00 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:18:00 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:18:00 +0200
+Started GET "/cable" for 127.0.0.1 at 2018-01-01 17:18:00 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:18:00 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:18:12 +0200
+Started GET "/orders/1" for 127.0.0.1 at 2018-01-01 17:18:13 +0200
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 224ms (Views: 197.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-01-01 17:18:18 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:18:18 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:18:30 +0200
+Started GET "/orders/1" for 127.0.0.1 at 2018-01-01 17:18:30 +0200
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 156ms (Views: 145.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-01-01 17:18:35 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:18:35 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:19:41 +0200
+Started GET "/orders/1" for 127.0.0.1 at 2018-01-01 17:19:41 +0200
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering orders/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered orders/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 210ms (Views: 191.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-01-01 17:19:46 +0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-01-01 17:19:46 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
